@@ -1,4 +1,4 @@
-# Проект «XXX» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
+# Проект «Shopy»
 
 * Разработал: [Демидов Юрий](https://vk.com/id37064821).
 
