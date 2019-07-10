@@ -173,7 +173,7 @@
           <h3 class="best-sales__title">Reebock Track Jacket</h3>
           <img class="best-sales__product-image" src="img/Product-4-small.jpg" alt="Reebock Track Jacket" width="89" height="90">
           <div class="best-sales__info">
-            <div class="best-sales__rating"><span>Rating 3/4</span></div>
+            <div class="best-sales__rating rating"><span>Rating 3/4</span></div>
             <b class="best-sales__price">100$</b>
           </div>
           <div class="best-sales__buy">add to cart</div>
@@ -182,7 +182,7 @@
           <h3 class="best-sales__title">Reebock Track Jacket</h3>
           <img class="best-sales__product-image" src="img/Product-4-small.jpg" alt="Reebock Track Jacket" width="89" height="90">
           <div class="best-sales__info">
-            <div class="best-sales__rating"><span>Rating 3/4</span></div>
+            <div class="best-sales__rating rating"><span>Rating 3/4</span></div>
             <b class="best-sales__price">100$</b>
           </div>
           <div class="best-sales__buy">add to cart</div>
@@ -191,7 +191,7 @@
           <h3 class="best-sales__title">Reebock Track Jacket</h3>
           <img class="best-sales__product-image" src="img/Product-4-small.jpg" alt="Reebock Track Jacket" width="89" height="90">
           <div class="best-sales__info">
-            <div class="best-sales__rating"><span>Rating 3/4</span></div>
+            <div class="best-sales__rating rating"><span>Rating 3/4</span></div>
             <b class="best-sales__price">100$</b>
           </div>
           <div class="best-sales__buy">add to cart</div>
@@ -202,46 +202,50 @@
         <h3 class="subscription__heading">News letter</h3>
         <p class="subscription__tip">join us now to get all news and special offers</p>
         <form class="subscription__form" action="https://echo.htmlacademy.ru" method="post">
-          <label for="email">type your email here</label>
-          <input type="email" id="email" name="email" required>
-          <button type="submit">join us</button>
+          <div class="email-input">
+            <label for="email">type your email here</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <button class="button" type="submit">join us</button>
         </form>
       </section>
     </div>
   </main>
   <footer class="page-footer">
-    <div class="page-footer__col-1 copyright">
-      <a class="copyright__logo logo">
-        <span>SH</span><img class="logo__image" alt="O" src="img/Logo-fragment.png" width="34" height="18"><span>PY</span><br>
-        <b class="logo__slogan">shope any where</b>
-      </a>
-      <p class="copyright__info">Shopy© 2015. Your copy right here</p>
-    </div>
-    <div class="page-footer__col-2 footer-menu">
-      <div class="footer-menu__col-1">
-        <ul class="footer-menu__list">
-          <li class="footer-menu__item"><a class="footer-menu__link" href="#">about us</a></li>
-          <li class="footer-menu__item"><a class="footer-menu__link" href="#">contact us</a></li>
-          <li class="footer-menu__item"><a class="footer-menu__link" href="#">support</a></li>
-        </ul>
+    <div class="page-footer__wrapper">
+      <div class="page-footer__col-1 copyright">
+        <a class="copyright__logo logo">
+          <span>SH</span><img class="logo__image" alt="O" src="img/Logo-fragment.png" width="34" height="18"><span>PY</span><br>
+          <b class="logo__slogan">shope any where</b>
+        </a>
+        <p class="copyright__info">Shopy© 2015. Your copy right here</p>
       </div>
-      <div class="footer-menu__col-2">
-        <ul class="footer-menu__list">
-          <li class="footer-menu__item"><a class="footer-menu__link" href="#">our feed</a></li>
-          <li class="footer-menu__item"><a class="footer-menu__link" href="#">terms and conditions</a></li>
-          <li class="footer-menu__item"><a class="footer-menu__link" href="#">our privacy</a></li>
-        </ul>
+      <div class="page-footer__col-2 footer-menu">
+        <div class="footer-menu__col-1">
+          <ul class="footer-menu__list">
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">about us</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">contact us</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">support</a></li>
+          </ul>
+        </div>
+        <div class="footer-menu__col-2">
+          <ul class="footer-menu__list">
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">our feed</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">terms and conditions</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">our privacy</a></li>
+          </ul>
+        </div>
+        <div class="footer-menu__col-3">
+          <ul class="footer-menu__list">
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">join us</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">live support</a></li>
+          </ul>
+        </div>
       </div>
-      <div class="footer-menu__col-3">
-        <ul class="footer-menu__list">
-          <li class="footer-menu__item"><a class="footer-menu__link" href="#">join us</a></li>
-          <li class="footer-menu__item"><a class="footer-menu__link" href="#">live support</a></li>
-        </ul>
+      <div class="page-footer__col-3 payment-info">
+        <h3 class="payment-info__title">Payment methods</h3>
+        <img class="payment-info__image" src="img/Payment-icon.png" alt="AMEX, Halva, Visa, MasterCard, MIR" width="170" height="19">
       </div>
-    </div>
-    <div class="page-footer__col-3 payment-info">
-      <h3 class="payment-info__title">Payment methods</h3>
-      <img class="payment-info__image" src="img/Payment-icon.png" alt="AMEX, Halva, Visa, MasterCard, MIR" width="170" height="19">
     </div>
   </footer>
 </body>
