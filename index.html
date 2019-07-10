@@ -3,16 +3,246 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Shopy</title>
-	<meta name="description" content="Shopy — магазин верхней одежды для всей семьи">
-	<meta name="keywords" content="магазин верхней одежды мужские женские детские куртки">
+	<meta name="description" content="Shopy — outerwear for the whole family">
+	<meta name="keywords" content="shop store outwear outerwear men's women's children's jackets">
+  <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
+  <base target="_blank">
 </head>
 <body>
-	<header class="page-header">
-   <div class="page-header-top"></div>
-   <div class="page-header-bottom">Dratuti</div>
+  <header class="page-header">
+    <div class="page-header__wrapper">
+      <div class="page-header__top">
+        <div class="page-header__contacts contacts">
+          <a class="contacts__email" href="mailto:info@shopy.com">info@shopy.com</a>
+          <a class="contacts__phone" href="tel:+4535553996"><span>453 - 5553 - 996</span></a>
+        </div>
+        <div class="page-header__social social">
+          <ul class="social__list">
+            <li class="social__item"><a class="social__link social__link--fb" href="#">Facebook</a></li>
+            <li class="social__item"><a class="social__link social__link--tw" href="#">Twitter</a></li>
+            <li class="social__item"><a class="social__link social__link--gp" href="#">Google+</a></li>
+            <li class="social__item"><a class="social__link social__link--ig" href="#">Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="page-header__bottom">
+        <a class="page-header__logo logo">
+          <span>SH</span><img class="logo__image" alt="O" src="img/Logo-fragment.png" width="34" height="18"><span>PY</span><br>
+          <b class="logo__slogan">shope any where</b>
+        </a>
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item--active"><a class="main-nav__link">Home</a></li>
+            <li class="main-nav__item"><a href="#" class="main-nav__link">Products</a></li>
+            <li class="main-nav__item"><a href="#" class="main-nav__link">Hot Deals</a></li>
+            <li class="main-nav__item"><a href="#" class="main-nav__link">About</a></li>
+            <li class="main-nav__item"><a href="#" class="main-nav__link">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="page-header__user-block">
+          <ul class="user-actions">
+            <li class="user-actions__item"><a class="user-actions__action user-actions__action--search" href="#">Search</a></li>
+            <li class="user-actions__item"><a class="user-actions__action user-actions__action--sign-in" href="#">Sign-in</a></li>
+            <li class="user-actions__item cart"><a class="user-actions__action user-actions__action--cart" href="#">Cart</a><sup class="cart__number-of-goods">5</sup></li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </header>
-  <main></main>
-  <footer class="page-footer"></footer>
+  <main class="page-content">
+    <div class="page-content__wrapper">
+      <h1 class="page-content__main-title">Shopy — outerwear for the whole family</h1>
+      <section class="promo">
+        <div class="promo__slider-controls">
+          <button type="button" class="promo__button promo__button--prev">prev</button>
+          <div class="promo__current"></div>
+          <button type="button" class="promo__button promo__button--next">next</button>
+        </div>
+        <div class="promo__text">
+          <h2 class="promo__title">Full winter kit</h2>
+          <p class="promo__goods">Half Jacket + Skiny Trousers + Boot leather</p>
+          <p class="promo__description">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+          <b class="promo__price">Price: 120$</b>
+          <a class="promo__add-to-cart" href=""></a>
+        </div>
+      </section>
+      <section class="new-arrivals">
+        <h2 class="new-arrivals__title">New arrivals</h2>
+        <p class="new-arrivals__description">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+        <div class="new-arrivals__item product">
+          <img class="product__image" src="img/Product-1.jpg" alt="Reebock Track Jacket">
+          <h3 class="product__name">Reebock Track Jacket</h3>
+          <b class="product__price">100$</b>
+          <div class="product__focused">
+            <img class="product__small-image" src="img/Product-3-small.jpg" alt="Reebock Track Jacket" width="70" height="87">
+            <a class="product__to-description" href="#">Reebock Track Jacket</a>
+            <p class="product__sizes">sizes : s - m - l - xl</p>
+            <ul class="product__color-list">
+              <li class="product__color product__color--red">red</li>
+              <li class="product__color product__color--black">black</li>
+              <li class="product__color product__color--blue">blue</li>
+              <li class="product__color product__color--green">green</li>
+            </ul>
+            <a class="product__option product__option--share" href="#">Share</a>
+            <a class="product__option product__option--add-to-cart" href="#">Add to cart</a>
+            <a class="product__option product__option--like" href="#">Like</a>
+          </div>
+        </div>
+        <div class="new-arrivals__item product">
+          <img class="product__image" src="img/Product-2.jpg" alt="Reebock Track Jacket">
+          <h3 class="product__name">Reebock Track Jacket</h3>
+          <b class="product__price">100$</b>
+          <div class="product__focused">
+            <img class="product__small-image" src="img/Product-3-small.jpg" alt="Reebock Track Jacket" width="70" height="87">
+            <a class="product__to-description" href="#">Reebock Track Jacket</a>
+            <p class="product__sizes">sizes : s - m - l - xl</p>
+            <ul class="product__color-list">
+              <li class="product__color product__color--red">red</li>
+              <li class="product__color product__color--black">black</li>
+              <li class="product__color product__color--blue">blue</li>
+              <li class="product__color product__color--green">green</li>
+            </ul>
+            <a class="product__option product__option--share" href="#">Share</a>
+            <a class="product__option product__option--add-to-cart" href="#">Add to cart</a>
+            <a class="product__option product__option--like" href="#">Like</a>
+          </div>
+        </div>
+        <div class="new-arrivals__item product">
+          <img class="product__image" src="img/Product-3.jpg" alt="Reebock Track Jacket">
+          <h3 class="product__name">Reebock Track Jacket</h3>
+          <b class="product__price">100$</b>
+          <div class="product__focused">
+            <img class="product__small-image" src="img/Product-3-small.jpg" alt="Reebock Track Jacket" width="70" height="87">
+            <a class="product__to-description" href="#">Reebock Track Jacket</a>
+            <p class="product__sizes">sizes : s - m - l - xl</p>
+            <ul class="product__color-list">
+              <li class="product__color product__color--red">red</li>
+              <li class="product__color product__color--black">black</li>
+              <li class="product__color product__color--blue">blue</li>
+              <li class="product__color product__color--green">green</li>
+            </ul>
+            <a class="product__option product__option--share" href="#">Share</a>
+            <a class="product__option product__option--add-to-cart" href="#">Add to cart</a>
+            <a class="product__option product__option--like" href="#">Like</a>
+          </div>
+        </div>
+        <div class="new-arrivals__item product">
+          <img class="product__image" src="img/Product-3.jpg" alt="Reebock Track Jacket">
+          <h3 class="product__name">Reebock Track Jacket</h3>
+          <b class="product__price">100$</b>
+          <div class="product__focused">
+            <img class="product__small-image" src="img/Product-3-small.jpg" alt="Reebock Track Jacket" width="70" height="87">
+            <a class="product__to-description" href="#">Reebock Track Jacket</a>
+            <p class="product__sizes">sizes : s - m - l - xl</p>
+            <ul class="product__color-list">
+              <li class="product__color product__color--red">red</li>
+              <li class="product__color product__color--black">black</li>
+              <li class="product__color product__color--blue">blue</li>
+              <li class="product__color product__color--green">green</li>
+            </ul>
+            <a class="product__option product__option--share" href="#">Share</a>
+            <a class="product__option product__option--add-to-cart" href="#">Add to cart</a>
+            <a class="product__option product__option--like" href="#">Like</a>
+          </div>
+        </div>
+        <div class="show-more">
+          <div class="show-more__dots"><p class="show-more__text">Show more</p></div>
+        </div>
+      </section>
+      <section class="adv-area">
+        <h2 class="adv-area__title">Advertisment</h2>
+        <div class="adv adv--1">
+          <div class="adv__image">
+            <span>Sale<br>50%</span>
+          </div>
+          <h3 class="adv__title">Full winter kit</h3>
+          <p class="adv__description">Half Jacket + Skiny Trousers + Boot leather</p>
+          <a class="adv__buy">Add to cart</a>
+          <b class="adv__price">120$</b>
+        </div>
+        <div class="adv adv--2">
+          <p class="adv__announcement">adv area</p>
+          <p class="adv__size">470 x 100</p>
+        </div>
+      </section>
+      <section class="best-sales">
+        <h2 class="best-sales__title">New arrivals</h2>
+        <p class="best-sales__description">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+        <div class="best-sales__item">
+          <h3 class="best-sales__title">Reebock Track Jacket</h3>
+          <img class="best-sales__product-image" src="img/Product-4-small.jpg" alt="Reebock Track Jacket" width="89" height="90">
+          <div class="best-sales__info">
+            <div class="best-sales__rating"><span>Rating 3/4</span></div>
+            <b class="best-sales__price">100$</b>
+          </div>
+          <div class="best-sales__buy">add to cart</div>
+        </div>
+        <div class="best-sales__item">
+          <h3 class="best-sales__title">Reebock Track Jacket</h3>
+          <img class="best-sales__product-image" src="img/Product-4-small.jpg" alt="Reebock Track Jacket" width="89" height="90">
+          <div class="best-sales__info">
+            <div class="best-sales__rating"><span>Rating 3/4</span></div>
+            <b class="best-sales__price">100$</b>
+          </div>
+          <div class="best-sales__buy">add to cart</div>
+        </div>
+        <div class="best-sales__item">
+          <h3 class="best-sales__title">Reebock Track Jacket</h3>
+          <img class="best-sales__product-image" src="img/Product-4-small.jpg" alt="Reebock Track Jacket" width="89" height="90">
+          <div class="best-sales__info">
+            <div class="best-sales__rating"><span>Rating 3/4</span></div>
+            <b class="best-sales__price">100$</b>
+          </div>
+          <div class="best-sales__buy">add to cart</div>
+        </div>
+      </section>
+      <section class="subscription">
+        <h2 class="subscription__title">Subscription</h2>
+        <h3 class="subscription__heading">News letter</h3>
+        <p class="subscription__tip">join us now to get all news and special offers</p>
+        <form class="subscription__form" action="https://echo.htmlacademy.ru" method="post">
+          <label for="email">type your email here</label>
+          <input type="email" id="email" name="email" required>
+          <button type="submit">join us</button>
+        </form>
+      </section>
+    </div>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__col-1 copyright">
+      <a class="copyright__logo logo">
+        <span>SH</span><img class="logo__image" alt="O" src="img/Logo-fragment.png" width="34" height="18"><span>PY</span><br>
+        <b class="logo__slogan">shope any where</b>
+      </a>
+      <p class="copyright__info">Shopy© 2015. Your copy right here</p>
+    </div>
+    <div class="page-footer__col-2 footer-menu">
+      <div class="footer-menu__col-1">
+        <ul class="footer-menu__list">
+          <li class="footer-menu__item"><a class="footer-menu__link" href="#">about us</a></li>
+          <li class="footer-menu__item"><a class="footer-menu__link" href="#">contact us</a></li>
+          <li class="footer-menu__item"><a class="footer-menu__link" href="#">support</a></li>
+        </ul>
+      </div>
+      <div class="footer-menu__col-2">
+        <ul class="footer-menu__list">
+          <li class="footer-menu__item"><a class="footer-menu__link" href="#">our feed</a></li>
+          <li class="footer-menu__item"><a class="footer-menu__link" href="#">terms and conditions</a></li>
+          <li class="footer-menu__item"><a class="footer-menu__link" href="#">our privacy</a></li>
+        </ul>
+      </div>
+      <div class="footer-menu__col-3">
+        <ul class="footer-menu__list">
+          <li class="footer-menu__item"><a class="footer-menu__link" href="#">join us</a></li>
+          <li class="footer-menu__item"><a class="footer-menu__link" href="#">live support</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="page-footer__col-3 payment-info">
+      <h3 class="payment-info__title">Payment methods</h3>
+      <img class="payment-info__image" src="img/Payment-icon.png" alt="AMEX, Halva, Visa, MasterCard, MIR" width="170" height="19">
+    </div>
+  </footer>
 </body>
 </html>
