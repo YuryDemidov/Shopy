@@ -1,70 +1,201 @@
 @font-face {
   font-family: "HarmoniaSansProCyr";
-  src: local("HarmoniaSansProCyr-Black"),
-  url("../fonts/HarmoniaSansProCyr-Black.woff") format("woff");
+  src: local("HarmoniaSansProCyr-Black"), url("../fonts/HarmoniaSansProCyr-Black.woff") format("woff");
   font-weight: 900;
-  font-style: normal;
-}
+  font-style: normal; }
 
 @font-face {
   font-family: "HarmoniaSansProCyr";
-  src: local("HarmoniaSansProCyr-Bold"),
-  url("../fonts/HarmoniaSansProCyr-Bold.woff") format("woff");
+  src: local("HarmoniaSansProCyr-Bold"), url("../fonts/HarmoniaSansProCyr-Bold.woff") format("woff");
   font-weight: bold;
-  font-style: normal;
-}
+  font-style: normal; }
 
 @font-face {
   font-family: "HarmoniaSansProCyr";
-  src: local("HarmoniaSansProCyr-Italic"),
-  url("../fonts/HarmoniaSansProCyr-Italic.woff") format("woff");
+  src: local("HarmoniaSansProCyr-Italic"), url("../fonts/HarmoniaSansProCyr-Italic.woff") format("woff");
   font-weight: normal;
-  font-style: italic;
-}
+  font-style: italic; }
 
 @font-face {
   font-family: "HarmoniaSansProCyr";
-  src: local("HarmoniaSansProCyr-Light"),
-  url("../fonts/HarmoniaSansProCyr-Light.woff") format("woff");
+  src: local("HarmoniaSansProCyr-Light"), url("../fonts/HarmoniaSansProCyr-Light.woff") format("woff");
   font-weight: 300;
-  font-style: normal;
-}
+  font-style: normal; }
 
 @font-face {
   font-family: "HarmoniaSansProCyr";
-  src: local("HarmoniaSansProCyr-Regular"),
-  url("../fonts/HarmoniaSansProCyr-Regular.woff") format("woff");
+  src: local("HarmoniaSansProCyr-Regular"), url("../fonts/HarmoniaSansProCyr-Regular.woff") format("woff");
   font-weight: normal;
-  font-style: normal;
-}
+  font-style: normal; }
 
 @font-face {
   font-family: "HarmoniaSansProCyr";
-  src: local("HarmoniaSansProCyr-SemiBd"),
-  url("../fonts/HarmoniaSansProCyr-SemiBd.woff") format("woff");
+  src: local("HarmoniaSansProCyr-SemiBd"), url("../fonts/HarmoniaSansProCyr-SemiBd.woff") format("woff");
   font-weight: 600;
-  font-style: normal;
-}
+  font-style: normal; }
 
 @font-face {
-    font-family: "TitilliumText";
-    src: url("titilliumtext22l006-webfont.woff2") format("woff2");
-    font-weight: bold;
-    font-style: normal;
-}
+  font-family: "TitilliumText";
+  src: url("../fonts/titilliumtext22l006-webfont.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal; }
 
 body {
   min-width: 1200px;
-  padding: 20px;
   font-family: "HarmoniaSansProCyr", "Arial", sans-serif;
+  font-size: 16px;
   font-weight: normal;
   font-style: normal;
-}
+  color: #34404b; }
 
 .product__focused {
-  display: none;
-}
+  display: none; }
 
 .best-sales__buy {
-  display: none;
-}
+  display: none; }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip-path: inset(100%);
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden; }
+
+*, *::before, *::after {
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box; }
+
+.page-header__container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 1200px;
+  min-height: 60px;
+  margin: 0 auto;
+  padding: 0 15px; }
+
+.page-header__bottom {
+  min-height: 121px;
+  border-top: 1px solid #edeff1; }
+
+.contacts a {
+  position: relative;
+  margin-right: 10px;
+  padding-left: 26px;
+  font-size: 12px;
+  text-decoration: none;
+  color: #34404b; }
+  .contacts a:hover {
+    color: #ff5912; }
+  .contacts a::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 20px;
+    height: 14px;
+    background-image: url("../img/Sprite.png");
+    background-repeat: no-repeat; }
+
+.contacts__email::before {
+  background-position: -87px -90px; }
+
+.contacts__phone::before {
+  background-position: -6px -128px; }
+
+.logo {
+  margin-top: 34px;
+  font-size: 30px;
+  font-family: "TitilliumText","Arial", sans-serif;
+  font-weight: bold;
+  line-height: 1.2; }
+  .logo__image {
+    position: relative;
+    bottom: 5px;
+    margin: 0 7px; }
+  .logo__slogan {
+    position: relative;
+    bottom: 24px;
+    left: 5px;
+    font-family: "HarmoniaSansProCyr", "Arial", sans-serif;
+    color: #495662;
+    font-size: 9px;
+    font-weight: normal;
+    letter-spacing: 3px; }
+
+.main-nav {
+  flex-grow: 1;
+  margin-left: 61px;
+  margin-top: 10px; }
+  .main-nav__list {
+    padding: 0;
+    margin: 0;
+    list-style: none; }
+  .main-nav__item {
+    display: inline-block;
+    vertical-align: middle; }
+  .main-nav__link {
+    padding: 0 5px;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #34404b; }
+  .main-nav__link:hover {
+    text-decoration: underline;
+    color: #ff5912; }
+  .main-nav__link--active {
+    color: #ff5912; }
+  .main-nav__link--active:hover {
+    text-decoration: none; }
+
+.social__list {
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+
+.social__item {
+  display: inline-block;
+  margin-left: 10px;
+  vertical-align: middle; }
+
+.social__link {
+  padding: 5px; }
+
+.social__link:last-child {
+  padding-right: 0; }
+
+.social__icon {
+  fill: #34404b;
+  fill-rule: evenodd; }
+
+.social__link:hover .social__icon {
+  fill: #ff5912; }
+
+.user-actions {
+  list-style: none; }
+  .user-actions__item {
+    display: inline-block;
+    vertical-align: middle; }
+  .user-actions__action {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    margin-left: 15px;
+    vertical-align: middle;
+    background-image: url("../img/Sprite.png");
+    background-repeat: no-repeat; }
+  .user-actions__action--search {
+    background-position: -5px -85px; }
+  .user-actions__action--sign-in {
+    background-position: -47px -46px; }
+  .user-actions__action--cart {
+    background-position: -91px -44px; }
+
+.page-content {
+  background: #e1f1f9; }
