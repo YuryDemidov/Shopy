@@ -1,0 +1,77 @@
+.promo {
+  padding: 215px 0;
+
+  background: #f1f1f1 url("../img/Background.png") no-repeat;
+
+  &__text {
+    margin-left: 85px;
+  }
+
+  &__slider {
+    margin-top: 65px;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 12px;
+    padding: 0;
+
+    font-size: 52px;
+    color: $firm-color;
+    text-transform: uppercase;
+    font-weight: 900;
+  }
+
+  &__goods {
+    margin: 0;
+    padding: 0;
+
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 600;
+  }
+
+  &__description {
+    margin: 0;
+    margin-bottom: 54px;
+    padding: 0;
+
+    line-height: 30px;
+    color: $content-text-color;
+  }
+
+  &__price {
+    margin-right: 30px;
+
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  &__add-to-cart {
+    position: relative;
+
+    padding-left: 35px;
+
+    font-size: 18px;
+    color: $firm-color;
+    font-weight: 600;
+    text-decoration: none;
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      width: 25px;
+      height: 25px;
+
+      background: url("../img/Sprite.png") no-repeat -91px -48px;
+    }
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

@@ -5,6 +5,12 @@
   font-family: "TitilliumText","Arial", sans-serif;
   font-weight: bold;
   line-height: 1.2;
+  color: $text-color;
+  text-decoration: none;
+
+  &:visited {
+    color: $text-color;
+  }
 
   &__image {
     position: relative;

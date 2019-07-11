@@ -44,6 +44,7 @@ body {
   min-width: 1200px;
   font-family: "HarmoniaSansProCyr", "Arial", sans-serif;
   font-size: 16px;
+  line-height: 1.2;
   font-weight: normal;
   font-style: normal;
   color: #34404b; }
@@ -115,7 +116,11 @@ html {
   font-size: 30px;
   font-family: "TitilliumText","Arial", sans-serif;
   font-weight: bold;
-  line-height: 1.2; }
+  line-height: 1.2;
+  color: #34404b;
+  text-decoration: none; }
+  .logo:visited {
+    color: #34404b; }
   .logo__image {
     position: relative;
     bottom: 5px;
@@ -178,24 +183,120 @@ html {
   fill: #ff5912; }
 
 .user-actions {
+  margin: 0;
+  padding: 0;
   list-style: none; }
   .user-actions__item {
     display: inline-block;
-    vertical-align: middle; }
+    vertical-align: middle;
+    margin-top: 20px; }
   .user-actions__action {
     display: inline-block;
     width: 25px;
     height: 25px;
-    margin-left: 15px;
+    margin-left: 24px;
     vertical-align: middle;
     background-image: url("../img/Sprite.png");
     background-repeat: no-repeat; }
-  .user-actions__action--search {
-    background-position: -5px -85px; }
-  .user-actions__action--sign-in {
-    background-position: -47px -46px; }
-  .user-actions__action--cart {
-    background-position: -91px -44px; }
+    .user-actions__action--search {
+      background-position: -5px -85px; }
+    .user-actions__action--sign-in {
+      background-position: -47px -46px; }
+    .user-actions__action--cart {
+      background-position: -90px -44px; }
 
-.page-content {
-  background: #e1f1f9; }
+.cart {
+  position: relative;
+  margin-top: 0;
+  padding-top: 20px; }
+  .cart__number-of-goods {
+    position: absolute;
+    top: 7px;
+    right: 2px;
+    width: 16px;
+    height: 16px;
+    font-size: 13px;
+    text-align: center;
+    vertical-align: bottom;
+    color: #ffffff;
+    background-color: #34404b;
+    border-radius: 50%; }
+
+.page-content__container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px; }
+
+.promo {
+  padding: 215px 0;
+  background: #f1f1f1 url("../img/Background.png") no-repeat; }
+  .promo__text {
+    margin-left: 85px; }
+  .promo__slider {
+    margin-top: 65px; }
+  .promo__title {
+    margin: 0;
+    margin-bottom: 12px;
+    padding: 0;
+    font-size: 52px;
+    color: #ff5912;
+    text-transform: uppercase;
+    font-weight: 900; }
+  .promo__goods {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 600; }
+  .promo__description {
+    margin: 0;
+    margin-bottom: 54px;
+    padding: 0;
+    line-height: 30px;
+    color: #495662; }
+  .promo__price {
+    margin-right: 30px;
+    font-size: 18px;
+    font-weight: 600; }
+  .promo__add-to-cart {
+    position: relative;
+    padding-left: 35px;
+    font-size: 18px;
+    color: #ff5912;
+    font-weight: 600;
+    text-decoration: none; }
+    .promo__add-to-cart::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 25px;
+      height: 25px;
+      background: url("../img/Sprite.png") no-repeat -91px -48px; }
+    .promo__add-to-cart:hover {
+      text-decoration: underline; }
+
+.slider-controls {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  width: 10px;
+  height: 88px;
+  font-size: 0;
+  border: none; }
+  .slider-controls__button {
+    width: 10px;
+    height: 16px;
+    padding: 0;
+    border: none;
+    background-color: #ffffff;
+    cursor: pointer; }
+  .slider-controls__current {
+    width: 10px;
+    height: 36px;
+    background-color: #ff5912; }
