@@ -1,0 +1,24 @@
+.cart {
+  position: relative;
+
+  margin-top: 0;
+  padding-top: 20px;
+
+
+  &__number-of-goods {
+    position: absolute;
+    top: 7px;
+    right: 2px;
+
+    width: 16px;
+    height: 16px;
+
+    font-size: 13px;
+    text-align: center;
+    vertical-align: bottom;
+    color: #ffffff;
+
+    background-color: $text-color;
+    border-radius: 50%;
+  }
+}
