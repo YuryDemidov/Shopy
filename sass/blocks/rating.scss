@@ -1,0 +1,39 @@
+.rating {
+  display: inline-flex;
+  width: 60px;
+  margin: auto;
+
+  vertical-align: top;
+
+  input {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+  }
+
+  input + label {
+    font-size: 0;
+    display: block;
+    width: 15px;
+    height: 14px;
+    cursor: pointer;
+    background-image: url(../img/rating-stars/rating-star_fill.svg);
+  }
+
+  label:hover ~ label,
+  &:not(:hover) input:invalid + label,
+  &:not(:hover) input:checked + label ~ label {
+    background: url(../img/rating-stars/rating-star.svg) no-repeat center / contain,
+                url(../img/rating-stars/rating-star_fill.svg) no-repeat center / 0 0,
+                url(../img/rating-stars/rating-star_focus.svg) no-repeat center / 0 0;
+  }
+
+  input + label:hover {
+    background-image: url(../img/rating-stars/rating-star_focus.svg);
+  }
+}
