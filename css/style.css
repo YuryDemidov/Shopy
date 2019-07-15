@@ -49,12 +49,6 @@ body {
   font-style: normal;
   color: #34404b; }
 
-.product__focused {
-  display: none; }
-
-.best-sales__buy {
-  display: none; }
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -338,6 +332,8 @@ html {
   width: 270px;
   padding-top: 30px;
   padding-bottom: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
   font-weight: bold;
   text-align: center;
   background-color: #ffffff; }
@@ -359,6 +355,8 @@ html {
     width: 270px;
     padding-top: 30px;
     padding-bottom: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
     font-weight: bold;
     text-align: center;
     background-color: #ffffff;
@@ -457,6 +455,7 @@ html {
     flex-wrap: nowrap;
     justify-content: space-between;
     width: 1200px;
+    height: 100px;
     margin: 0 auto;
     padding: 0 15px; }
 
@@ -468,54 +467,206 @@ html {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     width: 670px; }
   .adv__image {
     position: relative;
     width: 80px;
-    height: 80px; }
-    .adv__image::before {
+    height: 80px;
+    margin-left: 60px;
+    padding-top: 17px;
+    text-align: center;
+    color: #ffffff; }
+    .adv__image::before, .adv__image::after {
       content: "";
       position: absolute;
       top: 50%;
       left: 50%;
       width: 52px;
       height: 61px;
-      background-color: rgba(255, 89, 18, 0.6);
+      background-color: rgba(255, 89, 18, 0.6); }
+    .adv__image::before {
       transform: translate(-50%, -50%) rotate(45deg); }
     .adv__image::after {
-      content: "";
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      width: 52px;
-      height: 61px;
-      background-color: rgba(255, 89, 18, 0.6);
       transform: translate(-50%, -50%) rotate(-45deg); }
+  .adv__offer {
+    position: relative;
+    z-index: 1;
+    font-size: 12px;
+    font-style: italic; }
+  .adv__amount {
+    position: relative;
+    z-index: 2;
+    font-size: 18px;
+    font-weight: 900; }
+  .adv__text {
+    flex-grow: 1;
+    max-width: 300px;
+    margin-left: 60px; }
+  .adv__title {
+    margin: 0;
+    padding: 0;
+    font-size: 22px;
+    font-weight: 900;
+    text-transform: uppercase; }
+  .adv__description {
+    margin: 0;
+    margin-top: 10px;
+    padding: 0;
+    font-size: 12px;
+    color: #495662; }
+  .adv__buy {
+    margin-right: 60px; }
+  .adv__add-to-cart {
+    display: inline-block;
+    width: 30px;
+    height: 22px;
+    background-image: url(../img/Sprite.png);
+    background-repeat: no-repeat;
+    background-position: -6px -49px; }
+  .adv__price {
+    padding-left: 5px;
+    font-size: 32px;
+    font-weight: 900;
+    color: #ff5912; }
   .adv--2 {
     width: 470px;
     text-align: center; }
-  .adv__announcement span {
-    color: #ff5912; }
+  .adv__announcement {
+    padding: 0;
+    margin: 0;
+    margin-top: 26px; }
+    .adv__announcement span {
+      color: #ff5912; }
   .adv__size {
-    opacity: 0.4;
+    padding: 0;
+    margin: 0;
+    margin-top: 10px;
     font-size: 12px;
-    white-space: pre; }
+    letter-spacing: 4px;
+    opacity: 0.4; }
 
-.cart {
-  position: relative;
-  margin-top: 0;
-  padding-top: 20px; }
-  .cart__number-of-goods {
+.best-sales {
+  margin-top: 108px; }
+  .best-sales__heading {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    text-align: center; }
+  .best-sales__title {
+    margin: 0;
+    margin-bottom: 19px;
+    padding: 0;
+    font-size: 36px;
+    font-weight: 900;
+    text-transform: uppercase; }
+    .best-sales__title span {
+      color: #ff5912; }
+  .best-sales__description {
+    margin: 0;
+    margin-bottom: 80px;
+    padding: 0;
+    color: #495662; }
+  .best-sales__flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px; }
+  .best-sales__item {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    min-height: 160px;
+    width: 370px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    padding-top: 35px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #ffffff; }
+  .best-sales__item:nth-child(3n) {
+    margin-right: 0; }
+  .best-sales__info {
+    text-align: right; }
+  .best-sales__product-name {
+    margin: 0;
+    padding: 0;
+    margin-top: 8px;
+    margin-bottom: 28px;
+    font-size: 18px;
+    font-weight: bold; }
+  .best-sales__product-image {
+    margin-right: 25px; }
+  .best-sales__rating {
+    margin-top: 28px; }
+  .best-sales__price {
+    padding-left: 65px;
+    color: #ff5912; }
+  .best-sales__buy {
     position: absolute;
-    top: 7px;
-    right: 2px;
-    width: 16px;
-    height: 16px;
-    font-size: 13px;
+    display: none;
+    width: 200px;
+    height: 40px;
+    bottom: 30px;
+    right: 5px;
     text-align: center;
-    vertical-align: bottom;
-    color: #ffffff;
-    background-color: #34404b;
-    border-radius: 50%; }
+    background-color: #ffffff; }
+    .best-sales__buy a {
+      position: relative;
+      display: inline-block;
+      height: 30px;
+      padding: 3px 30px;
+      font-weight: 600;
+      color: #ff5912;
+      text-decoration: none; }
+      .best-sales__buy a:hover {
+        text-decoration: underline; }
+      .best-sales__buy a::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: "";
+        width: 30px;
+        height: 30px;
+        background-image: url("../img/Sprite.png");
+        background-repeat: no-repeat;
+        background-position: -8px -49px; }
+  .best-sales__item:hover .best-sales__buy {
+    display: block; }
+  .best-sales__item:hover {
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.1); }
+
+.rating {
+  display: inline-flex;
+  width: 60px;
+  margin: auto;
+  vertical-align: top; }
+  .rating input {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0; }
+  .rating input + label {
+    font-size: 0;
+    display: block;
+    width: 15px;
+    height: 14px;
+    cursor: pointer;
+    background-image: url(../img/rating-stars/rating-star_fill.svg); }
+  .rating label:hover ~ label,
+  .rating:not(:hover) input:invalid + label,
+  .rating:not(:hover) input:checked + label ~ label {
+    background: url(../img/rating-stars/rating-star.svg) no-repeat center/contain, url(../img/rating-stars/rating-star_fill.svg) no-repeat center/0 0, url(../img/rating-stars/rating-star_focus.svg) no-repeat center/0 0; }
+  .rating input + label:hover {
+    background-image: url(../img/rating-stars/rating-star_focus.svg); }
