@@ -7,7 +7,7 @@
 	<meta name="keywords" content="shop store outwear outerwear men's women's children's jackets">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
-  <base target="_blank">
+  <link rel="shortcut icon" href="img/favicon.png" type="image/png">
 </head>
 <body>
   <header class="page-header">
@@ -192,14 +192,14 @@
         <h2 class="adv-area__title visually-hidden">Advertisment</h2>
         <div class="adv adv--1">
           <div class="adv__image">
-            <span>Sale<br>50%</span>
+            <span class="adv__offer">Sale</span><br><span class="adv__amount">50%</span>
           </div>
           <div class="adv__text">
             <h3 class="adv__title">Full winter kit</h3>
             <p class="adv__description">Half Jacket + Skiny Trousers + Boot leather</p>
           </div>
           <div class="adv__buy">
-            <a class="adv__add-to-cart"><span class="visually-hidden">Add to cart</span></a>
+            <a class="adv__add-to-cart" href="#"><span class="visually-hidden">Add to cart</span></a>
             <b class="adv__price">120$</b>
           </div>
         </div>
@@ -210,35 +210,73 @@
       </div>
     </section>
     <section class="best-sales">
-      <div class="page-content__container">
-        <h2 class="best-sales__title">Best sales</h2>
+      <div class="best-sales__heading">
+        <h2 class="best-sales__title"><span>Best</span> sales</h2>
         <p class="best-sales__description">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+      </div>
+      <div class="best-sales__flex-container">
         <div class="best-sales__item">
-          <h3 class="best-sales__title">Reebock Track Jacket</h3>
-          <img class="best-sales__product-image" src="img/Product-4-small.jpg" alt="Reebock Track Jacket" width="89" height="90">
-          <div class="best-sales__info">
-            <div class="best-sales__rating rating"><span>Rating 3/4</span></div>
-            <b class="best-sales__price">100$</b>
+          <div class="best-sales__product-image">
+            <img src="img/Product-4-small.jpg" alt="Reebock Track Jacket" width="89" height="90">
           </div>
-          <div class="best-sales__buy">add to cart</div>
+          <div class="best-sales__info">
+            <h3 class="best-sales__product-name">Reebock Track Jacket</h3>
+            <div class="best-sales__rating rating">
+              <input id="r1c1" type="radio" name="rating-1" value="1" required>
+              <label for="r1c1">1</label>
+              <input id="r1c2" type="radio" name="rating-1" value="2">
+              <label for="r1c2">2</label>
+              <input id="r1c3" type="radio" name="rating-1" value="3" checked>
+              <label for="r1c3">3</label>
+              <input id="r1c4" type="radio" name="rating-1" value="4">
+              <label for="r1c4">4</label>
+              <span class="visually-hidden">Rating 3/4</span>
+            </div>
+            <b class="best-sales__price">1000$</b>
+          </div>
+          <div class="best-sales__buy"><a href="#">add to cart</a></div>
         </div>
         <div class="best-sales__item">
-          <h3 class="best-sales__title">Reebock Track Jacket</h3>
-          <img class="best-sales__product-image" src="img/Product-4-small.jpg" alt="Reebock Track Jacket" width="89" height="90">
-          <div class="best-sales__info">
-            <div class="best-sales__rating rating"><span>Rating 3/4</span></div>
-            <b class="best-sales__price">100$</b>
+          <div class="best-sales__product-image">
+            <img src="img/Product-4-small.jpg" alt="Reebock Track Jacket" width="89" height="90">
           </div>
-          <div class="best-sales__buy">add to cart</div>
+          <div class="best-sales__info">
+            <h3 class="best-sales__product-name">Reebock Track Jacket</h3>
+            <div class="best-sales__rating rating">
+              <input id="r2c1" type="radio" name="rating-2" value="1" required>
+              <label for="r2c1">1</label>
+              <input id="r2c2" type="radio" name="rating-2" value="2">
+              <label for="r2c2">2</label>
+              <input id="r2c3" type="radio" name="rating-2" value="3" checked>
+              <label for="r2c3">3</label>
+              <input id="r2c4" type="radio" name="rating-2" value="4">
+              <label for="r2c4">4</label>
+              <span class="visually-hidden">Rating 3/4</span>
+            </div>
+            <b class="best-sales__price">490$</b>
+          </div>
+          <div class="best-sales__buy"><a href="#">add to cart</a></div>
         </div>
         <div class="best-sales__item">
-          <h3 class="best-sales__title">Reebock Track Jacket</h3>
-          <img class="best-sales__product-image" src="img/Product-4-small.jpg" alt="Reebock Track Jacket" width="89" height="90">
+          <div class="best-sales__product-image">
+            <img src="img/Product-4-small.jpg" alt="Reebock Track Jacket" width="89" height="90">
+          </div>
           <div class="best-sales__info">
-            <div class="best-sales__rating rating"><span>Rating 3/4</span></div>
+            <h3 class="best-sales__product-name">Reebock Track Jacket</h3>
+            <div class="best-sales__rating rating">
+              <input id="r3c1" type="radio" name="rating-3" value="1" required>
+              <label for="r3c1">1</label>
+              <input id="r3c2" type="radio" name="rating-3" value="2">
+              <label for="r3c2">2</label>
+              <input id="r3c3" type="radio" name="rating-3" value="3" checked>
+              <label for="r3c3">3</label>
+              <input id="r3c4" type="radio" name="rating-3" value="4">
+              <label for="r3c4">4</label>
+              <span class="visually-hidden">Rating 3/4</span>
+            </div>
             <b class="best-sales__price">100$</b>
           </div>
-          <div class="best-sales__buy">add to cart</div>
+          <div class="best-sales__buy"><a href="#">add to cart</a></div>
         </div>
       </div>
     </section>
