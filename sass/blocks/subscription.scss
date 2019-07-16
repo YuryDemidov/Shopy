@@ -1,0 +1,43 @@
+.subscription {
+  margin-top: 90px;
+
+  &__flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 1170px;
+    min-height: 123px;
+    padding-left: 55px;
+    padding-right: 42px;
+
+    background-color: #ffffff;
+  }
+
+  &__heading {
+    margin-right: 25px;
+
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: $firm-color;
+  }
+
+  &__tip {
+    margin-right: auto;
+
+    font-size: 14px;
+    font-style: italic;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 430px;
+    min-height: inherit;
+  }
+}
