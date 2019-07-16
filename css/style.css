@@ -217,6 +217,7 @@ html {
     border-radius: 50%; }
 
 .page-content {
+  padding-bottom: 122px;
   background-color: #f4f6f8; }
   .page-content__container {
     display: flex;
@@ -670,3 +671,77 @@ html {
     background: url(../img/rating-stars/rating-star.svg) no-repeat center/contain, url(../img/rating-stars/rating-star_fill.svg) no-repeat center/0 0, url(../img/rating-stars/rating-star_focus.svg) no-repeat center/0 0; }
   .rating input + label:hover {
     background-image: url(../img/rating-stars/rating-star_focus.svg); }
+
+.subscription {
+  margin-top: 90px; }
+  .subscription__flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 1170px;
+    min-height: 123px;
+    padding-left: 55px;
+    padding-right: 42px;
+    background-color: #ffffff; }
+  .subscription__heading {
+    margin-right: 25px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ff5912; }
+  .subscription__tip {
+    margin-right: auto;
+    font-size: 14px;
+    font-style: italic; }
+  .subscription__form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 430px;
+    min-height: inherit; }
+
+.email-input {
+  position: relative; }
+  .email-input::before {
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: 15px;
+    width: 22px;
+    height: 16px;
+    background-image: url("../img/Sprite.png");
+    background-repeat: no-repeat;
+    background-position: -85px -85px; }
+  .email-input__input {
+    min-width: 250px;
+    min-height: 80px;
+    margin-left: 15px;
+    padding: 10px;
+    padding-left: 30px;
+    border: none; }
+    .email-input__input::placeholder {
+      font-size: 14px;
+      font-style: italic;
+      color: #495662; }
+    .email-input__input:focus {
+      outline: none; }
+    .email-input__input:focus::placeholder {
+      transform: translateY(-25px);
+      transition: all 0.6s; }
+
+.button {
+  width: 100px;
+  height: 50px;
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #ff5912;
+  cursor: pointer; }
+
+.page-footer {
+  padding-top: 60px; }

@@ -222,14 +222,14 @@
           <div class="best-sales__info">
             <h3 class="best-sales__product-name">Reebock Track Jacket</h3>
             <div class="best-sales__rating rating">
-              <input id="r1c1" type="radio" name="rating-1" value="1" required>
-              <label for="r1c1">1</label>
-              <input id="r1c2" type="radio" name="rating-1" value="2">
-              <label for="r1c2">2</label>
-              <input id="r1c3" type="radio" name="rating-1" value="3" checked>
-              <label for="r1c3">3</label>
-              <input id="r1c4" type="radio" name="rating-1" value="4">
-              <label for="r1c4">4</label>
+              <input id="rating-1__1" type="radio" name="rating-1" value="1" required>
+              <label for="rating-1__1">1</label>
+              <input id="rating-1__2" type="radio" name="rating-1" value="2">
+              <label for="rating-1__2">2</label>
+              <input id="rating-1__3" type="radio" name="rating-1" value="3" checked>
+              <label for="rating-1__3">3</label>
+              <input id="rating-1__4" type="radio" name="rating-1" value="4">
+              <label for="rating-1__4">4</label>
               <span class="visually-hidden">Rating 3/4</span>
             </div>
             <b class="best-sales__price">1000$</b>
@@ -243,14 +243,14 @@
           <div class="best-sales__info">
             <h3 class="best-sales__product-name">Reebock Track Jacket</h3>
             <div class="best-sales__rating rating">
-              <input id="r2c1" type="radio" name="rating-2" value="1" required>
-              <label for="r2c1">1</label>
-              <input id="r2c2" type="radio" name="rating-2" value="2">
-              <label for="r2c2">2</label>
-              <input id="r2c3" type="radio" name="rating-2" value="3" checked>
-              <label for="r2c3">3</label>
-              <input id="r2c4" type="radio" name="rating-2" value="4">
-              <label for="r2c4">4</label>
+              <input id="rating-2__1" type="radio" name="rating-2" value="1" required>
+              <label for="rating-2__1">1</label>
+              <input id="rating-2__2" type="radio" name="rating-2" value="2">
+              <label for="rating-2__2">2</label>
+              <input id="rating-2__3" type="radio" name="rating-2" value="3" checked>
+              <label for="rating-2__3">3</label>
+              <input id="rating-2__4" type="radio" name="rating-2" value="4">
+              <label for="rating-2__4">4</label>
               <span class="visually-hidden">Rating 3/4</span>
             </div>
             <b class="best-sales__price">490$</b>
@@ -264,14 +264,14 @@
           <div class="best-sales__info">
             <h3 class="best-sales__product-name">Reebock Track Jacket</h3>
             <div class="best-sales__rating rating">
-              <input id="r3c1" type="radio" name="rating-3" value="1" required>
-              <label for="r3c1">1</label>
-              <input id="r3c2" type="radio" name="rating-3" value="2">
-              <label for="r3c2">2</label>
-              <input id="r3c3" type="radio" name="rating-3" value="3" checked>
-              <label for="r3c3">3</label>
-              <input id="r3c4" type="radio" name="rating-3" value="4">
-              <label for="r3c4">4</label>
+              <input id="rating-3__1" type="radio" name="rating-3" value="1" required>
+              <label for="rating-3__1">1</label>
+              <input id="rating-3__2" type="radio" name="rating-3" value="2">
+              <label for="rating-3__2">2</label>
+              <input id="rating-3__3" type="radio" name="rating-3" value="3" checked>
+              <label for="rating-3__3">3</label>
+              <input id="rating-3__4" type="radio" name="rating-3" value="4">
+              <label for="rating-3__4">4</label>
               <span class="visually-hidden">Rating 3/4</span>
             </div>
             <b class="best-sales__price">100$</b>
@@ -282,16 +282,17 @@
     </section>
     <section class="subscription">
       <div class="page-content__container">
-        <h2 class="subscription__title">Subscription</h2>
-        <h3 class="subscription__heading">News letter</h3>
-        <p class="subscription__tip">join us now to get all news and special offers</p>
-        <form class="subscription__form" action="https://echo.htmlacademy.ru" method="post">
-          <div class="email-input">
-            <label for="email">type your email here</label>
-            <input type="email" id="email" name="email" required>
-          </div>
-          <button class="button" type="submit">join us</button>
-        </form>
+        <div class="subscription__flex-container">
+          <h2 class="subscription__main-title visually-hidden">Subscription</h2>
+          <h3 class="subscription__heading">News letter</h3>
+          <p class="subscription__tip">join us now to get all news and special offers</p>
+          <form class="subscription__form" action="https://echo.htmlacademy.ru" method="post">
+            <div class="email-input">
+              <input class="email-input__input" type="email" id="email" name="email" placeholder="type your email here" autocomplete="off"  required>
+            </div>
+            <button class="button" type="submit">join us</button>
+          </form>
+        </div>
       </div>
     </section>
   </main>
