@@ -1,16 +1,22 @@
 .user-actions {
+  margin: 0;
+  margin-top: 33px;
+  padding: 0;
+
   list-style: none;
 
   &__item {
     display: inline-block;
     vertical-align: middle;
+
+    margin-top: 20px;
   }
 
   &__action {
     display: inline-block;
     width: 25px;
     height: 25px;
-    margin-left: 15px;
+    margin-left: 24px;
 
     vertical-align: middle;
 
@@ -27,6 +33,6 @@
   }
 
   &__action--cart {
-    background-position: -91px -44px;
+    background-position: -90px -44px;
   }
 }

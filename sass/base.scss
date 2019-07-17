@@ -1,0 +1,64 @@
+@font-face {
+  font-family: "HarmoniaSansProCyr";
+  src: local("HarmoniaSansProCyr-Black"),
+  url("../fonts/HarmoniaSansProCyr-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "HarmoniaSansProCyr";
+  src: local("HarmoniaSansProCyr-Bold"),
+  url("../fonts/HarmoniaSansProCyr-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "HarmoniaSansProCyr";
+  src: local("HarmoniaSansProCyr-Italic"),
+  url("../fonts/HarmoniaSansProCyr-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "HarmoniaSansProCyr";
+  src: local("HarmoniaSansProCyr-Light"),
+  url("../fonts/HarmoniaSansProCyr-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "HarmoniaSansProCyr";
+  src: local("HarmoniaSansProCyr-Regular"),
+  url("../fonts/HarmoniaSansProCyr-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "HarmoniaSansProCyr";
+  src: local("HarmoniaSansProCyr-SemiBd"),
+  url("../fonts/HarmoniaSansProCyr-SemiBd.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: "TitilliumText";
+    src: url("../fonts/titilliumtext22l006-webfont.woff2") format("woff2");
+    font-weight: bold;
+    font-style: normal;
+}
+
+body {
+  min-width: 1200px;
+  font-family: "HarmoniaSansProCyr", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: normal;
+  font-style: normal;
+  color: $text-color;
+}

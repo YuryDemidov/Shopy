@@ -1,0 +1,144 @@
+.best-sales {
+  margin-top: 108px;
+
+  &__heading {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    text-align: center;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 19px;
+    padding: 0;
+
+    font-size: 36px;
+    font-weight: 900;
+    text-transform: uppercase;
+
+    span {
+      color: $firm-color;
+    }
+  }
+
+  &__description {
+    margin: 0;
+    margin-bottom: 80px;
+    padding: 0;
+
+    color: $content-text-color;
+  }
+
+  &__flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+  &__item {
+    position: relative;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    min-height: 160px;
+    width: 370px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    padding-top: 35px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    background-color: #ffffff;
+  }
+
+  &__item:nth-child(3n) {
+    margin-right: 0;
+  }
+
+  &__info {
+    text-align: right;
+  }
+
+  &__product-name {
+    margin: 0;
+    padding: 0;
+    margin-top: 8px;
+    margin-bottom: 28px;
+
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  &__product-image {
+    margin-right: 25px;
+  }
+
+  &__rating {
+    margin-top: 28px;
+  }
+
+  &__price {
+    padding-left: 65px;
+
+    color: $firm-color;
+  }
+
+  &__buy {
+    position: absolute;
+
+    display: none;
+    width: 200px;
+    height: 40px;
+    bottom: 30px;
+    right: 5px;
+
+    text-align: center;
+
+    background-color: #ffffff;
+
+    a {
+      position: relative;
+
+      display: inline-block;
+      height: 30px;
+      padding: 3px 30px;
+
+      font-weight: 600;
+      color: $firm-color;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+
+      &::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: "";
+        width: 30px;
+        height: 30px;
+
+        background-image: url("../img/Sprite.png");
+        background-repeat: no-repeat;
+        background-position: -8px -49px;
+      }
+    }
+  }
+
+  &__item:hover .best-sales__buy {
+    display: block;
+  }
+
+  &__item:hover{
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.1);
+  }
+}

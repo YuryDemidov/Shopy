@@ -1,0 +1,135 @@
+.adv {
+  min-height: 100px;
+  border: 1px solid #eaedef;
+
+  background-color: #ffffff;
+
+  &--1 {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 670px;
+  }
+
+  &__image {
+    position: relative;
+
+    width: 80px;
+    height: 80px;
+    margin-left: 60px;
+    padding-top: 17px;
+
+    text-align: center;
+    color: #ffffff;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+
+      width: 52px;
+      height: 61px;
+
+      background-color: rgba(255, 89, 18, 0.6);
+    }
+
+    &::before {
+      transform: translate(-50%, -50%) rotate(45deg);
+    }
+
+    &::after {
+      transform: translate(-50%, -50%) rotate(-45deg);
+    }
+  }
+
+  &__offer {
+    position: relative;
+    z-index: 1;
+    font-size: 12px;
+    font-style: italic;
+  }
+
+  &__amount {
+    position: relative;
+    z-index: 2;
+    font-size: 18px;
+    font-weight: 900;
+  }
+
+  &__text {
+    flex-grow: 1;
+    max-width: 300px;
+    margin-left: 60px;
+  }
+
+  &__title {
+    margin: 0;
+    padding: 0;
+
+    font-size: 22px;
+    font-weight: 900;
+    text-transform: uppercase;
+  }
+
+  &__description {
+    margin: 0;
+    margin-top: 10px;
+    padding: 0;
+
+    font-size: 12px;
+    color: $content-text-color;
+  }
+
+  &__buy {
+    margin-right: 60px;
+  }
+
+  &__add-to-cart {
+    display: inline-block;
+    width: 30px;
+    height: 22px;
+
+    background-image: url(../img/Sprite.png);
+    background-repeat: no-repeat;
+    background-position: -6px -49px;
+  }
+
+  &__price {
+    padding-left: 5px;
+
+    font-size: 32px;
+    font-weight: 900;
+    color: $firm-color;
+  }
+
+  &--2 {
+    width: 470px;
+
+    text-align: center;
+  }
+
+  &__announcement {
+    padding: 0;
+    margin: 0;
+    margin-top: 26px;
+
+    span {
+      color: $firm-color;
+    }
+  }
+
+  &__size {
+    padding: 0;
+    margin: 0;
+    margin-top: 10px;
+
+    font-size: 12px;
+    letter-spacing: 4px;
+
+    opacity: 0.4;
+  }
+}

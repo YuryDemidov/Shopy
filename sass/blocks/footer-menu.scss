@@ -1,0 +1,23 @@
+.footer-menu {
+
+  &__list {
+    width: 170px;
+    margin: 0 15px;
+    padding: 0 15px;
+  }
+
+  &__item:hover {
+    color: $firm-color;
+  }
+
+  &__link:hover {
+    color: $firm-color;
+  }
+
+  &__link {
+    display: block;
+
+    text-decoration: none;
+    color: #28313b;
+  }
+}

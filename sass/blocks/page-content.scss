@@ -1,3 +1,16 @@
 .page-content {
-  background: #e1f1f9;
+  padding-bottom: 122px;
+
+  background-color: #f4f6f8;
+
+  &__container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
 }
