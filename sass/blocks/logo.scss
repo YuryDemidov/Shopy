@@ -1,5 +1,7 @@
 .logo {
-  margin-top: 34px;
+  position: relative;
+
+  padding-bottom: 9px;
 
   font-size: 30px;
   font-family: "TitilliumText","Arial", sans-serif;
@@ -19,9 +21,9 @@
   }
 
   &__slogan {
-    position: relative;
-    bottom: 24px;
-    left: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 4px;
 
     font-family: "HarmoniaSansProCyr", "Arial", sans-serif;
     color: $content-text-color;

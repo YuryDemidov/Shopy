@@ -1,12 +1,13 @@
 .main-nav {
   flex-grow: 1;
 
-  margin-left: 61px;
-  margin-top: 10px;
+  min-height: 121px;
+  margin-left: 60px;
 
   &__list {
     padding: 0;
     margin: 0;
+    margin-top: 50px;
 
     list-style: none;
   }

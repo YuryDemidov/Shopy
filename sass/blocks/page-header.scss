@@ -12,8 +12,17 @@
     padding: 0 15px;
   }
 
+  &__logo {
+    align-self: flex-start;
+    margin-top: 35px;
+  }
+
   &__bottom {
     min-height: 121px;
     border-top: 1px solid #edeff1;
+  }
+
+  &__user-block {
+    min-height: 121px;
   }
 }
