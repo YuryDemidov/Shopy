@@ -1,0 +1,18 @@
+.catalogue {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: 900px;
+
+  &__item {
+    margin-bottom: 30px;
+    margin-left: 30px;
+  }
+
+  &__show-more {
+    margin-top: 1px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+  }
+}

@@ -22,17 +22,17 @@
 
     background-image: url("../img/Sprite.png");
     background-repeat: no-repeat;
-  }
 
-  &__action--search {
-    background-position: -5px -85px;
-  }
+    &--search {
+      background-position: -5px -85px;
+    }
 
-  &__action--sign-in {
-    background-position: -47px -46px;
-  }
+    &--sign-in {
+      background-position: -47px -46px;
+    }
 
-  &__action--cart {
-    background-position: -90px -44px;
+    &--cart {
+      background-position: -90px -44px;
+    }
   }
 }

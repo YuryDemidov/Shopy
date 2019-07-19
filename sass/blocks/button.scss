@@ -10,4 +10,13 @@
   background-color: $firm-color;
 
   cursor: pointer;
+
+  &:hover {
+    border-radius: 15px;
+    transition-duration: 0.5s;
+  }
+
+  &:active {
+    transform: translateY(3px);
+  }
 }
