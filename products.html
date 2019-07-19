@@ -7,7 +7,6 @@
 	<meta name="keywords" content="shop store outwear outerwear men's women's children's jackets">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
-  <link href="css/SLIDER_ATTENTION.css" rel="stylesheet">
   <link rel="shortcut icon" href="img/favicon.png" type="image/png">
 </head>
 <body>
@@ -92,7 +91,7 @@
     <div class="products-page-content__container">
       <aside class="filter">
         <h2 class="filter__heading visually-hidden">Filter</h2>
-        <form class="filter__form" action="https://echo.htmlacademy.ru" method="post">
+        <form class="filter__form" id="filter__form" action="https://echo.htmlacademy.ru" method="post">
           <fieldset class="filter__group categories-filter">
             <h3 class="filter__group-name categories-filter__heading">Categories</h3>
             <input class="categories-filter__input" id="category-men" type="radio" name="category" value="men">
@@ -106,23 +105,27 @@
           </fieldset>
           <fieldset class="filter__group price-filter">
             <h3 class="filter__group-name price-filter__heading">Price Filter</h3>
-            <div class="price-filter__container container slider-bar">
+            <div class="price-filter__container slider-bar">
               <div class="slider-bar__controls">
-                <div class="slider-bar__slider slider">
-                  <div class="slider-bar__track track"></div>
+                <div class="slider-bar__slider">
+                  <div class="slider-bar__track"></div>
                 </div>
-                <div class="slider-bar__thumb thumb"></div>
-                <div class="slider-bar__thumb thumb"></div>
+                <div class="slider-bar__thumb"></div>
+                <div class="slider-bar__thumb"></div>
               </div>
-              <span class="slider-bar__min-value min-value">From</span>
-              <div class="slider-bar__output output"></div>
-              <span class="slider-bar__max-value max-value">To</span>
-              <div class="slider-bar__output output output--last"></div>
+              <div class="slider-bar__outputs">
+                <label class="slider-bar__min-value" for="min-price-number">From</label>
+                <input class="slider-bar__input" name="min-price-number" id="min-price-number" pattern="[0-9]{,4}" value="100">
+                <output class="slider-bar__output" name="min-price"></output>
+                <label class="slider-bar__max-value" for="max-price-number">To</label>
+                <input class="slider-bar__input" name="max-price-number" id="max-price-number" pattern="[0-9]{,4}" value="1000">
+                <output class="slider-bar__output" name="max-price"></output>
+              </div>
             </div>
           </fieldset>
           <fieldset class="filter__group sizes-filter">
             <h3 class="filter__group-name sizes-filter__heading">Sizes</h3>
-            <input class="sizes-filter__size" id="size-s" type="checkbox" name="size-s"checked>
+            <input class="sizes-filter__size" id="size-s" type="checkbox" name="size-s" checked>
             <label class="sizes-filter__option" for="size-s">Small</label>
             <input class="sizes-filter__size" id="size-m" type="checkbox" name="size-m">
             <label class="sizes-filter__option" for="size-m">Medium</label>
@@ -133,7 +136,7 @@
           </fieldset>
           <fieldset class="filter__group brands-filter">
             <h3 class="filter__group-name brands-filter__heading">Brands</h3>
-            <input class="brands-filter__brand" id="Reebok" type="checkbox" name="brand-reebok"checked>
+            <input class="brands-filter__brand" id="Reebok" type="checkbox" name="brand-reebok" checked>
             <label class="brands-filter__option" for="Reebok">Reebok</label>
             <input class="brands-filter__brand" id="Adidas" type="checkbox" name="brand-adidas">
             <label class="brands-filter__option" for="Adidas">Adidas</label>
@@ -147,7 +150,7 @@
       </aside>
       <section class="catalogue">
         <div class="catalogue__item product">
-          <img class="product__image" src="img/Product-2.jpg" alt="Reebock Track Jacket"width="159" height="214">
+          <img class="product__image" src="img/Product-2.jpg" alt="Reebock Track Jacket" width="159" height="214">
           <h3 class="product__name">Reebock Track Jacket</h3>
           <b class="product__price">100$</b>
           <div class="product__focused">
@@ -212,7 +215,7 @@
           </div>
         </div>
         <div class="catalogue__item product">
-          <img class="product__image" src="img/Product-2.jpg" alt="Reebock Track Jacket"width="159" height="214">
+          <img class="product__image" src="img/Product-2.jpg" alt="Reebock Track Jacket" width="159" height="214">
           <h3 class="product__name">Reebock Track Jacket</h3>
           <b class="product__price">100$</b>
           <div class="product__focused">
@@ -277,7 +280,7 @@
           </div>
         </div>
         <div class="catalogue__item product">
-          <img class="product__image" src="img/Product-2.jpg" alt="Reebock Track Jacket"width="159" height="214">
+          <img class="product__image" src="img/Product-2.jpg" alt="Reebock Track Jacket" width="159" height="214">
           <h3 class="product__name">Reebock Track Jacket</h3>
           <b class="product__price">100$</b>
           <div class="product__focused">
@@ -342,12 +345,12 @@
           </div>
         </div>
         <button class="catalogue__show-more show-more">
-          <p class="show-more__text visually-hidden">Show more</p>
-          <div class="show-more__dots">
+          <span class="show-more__text visually-hidden">Show more</span>
+          <span class="show-more__dots">
               <span class="show-more__dot"></span>
               <span class="show-more__dot"></span>
               <span class="show-more__dot"></span>
-          </div>
+          </span>
         </button>
       </section>
     </div>
@@ -406,6 +409,6 @@
       </div>
     </div>
   </footer>
-  <script src="js/SLIDER_ATTENTION.js"></script>
+  <script src="js/slider-bar.js"></script>
 </body>
 </html>

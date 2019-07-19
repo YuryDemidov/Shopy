@@ -27,4 +27,21 @@
     font-weight: 900;
     color: $firm-color;
   }
+
+  &__refresh {
+    display: none;
+    //no-js display: block;
+    width: 100%;
+    border: 1px solid #999;
+
+    background-color: #ffffff;
+
+    &:hover {
+      border-color: $firm-color;
+
+      box-shadow: 0 1px 10px #bbbbbb;
+
+      cursor: pointer;
+    }
+  }
 }

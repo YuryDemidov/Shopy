@@ -1,0 +1,97 @@
+// Commented values are written in js
+
+.slider-bar {
+
+  &__controls {
+  position: relative;
+
+  margin: 0 auto;
+  margin-top: 19px;
+ }
+
+  &__outputs {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-top: 40px;
+  }
+
+  &__input {
+    width: 45px;
+    height: 25px;
+    padding: 0;
+    padding-left: 2px;
+    margin: 0;
+    border: none;
+
+    background-color: #edf0f2;
+  }
+
+  &__slider {
+    pointer-events: none;
+    margin: 0px;
+    cursor: pointer;
+    // width:186px;
+
+    padding-left: 30%;
+    padding-right: 30%;
+    // height:3px;
+
+    background-color: #edf0f2;
+    box-sizing: border-box;
+  }
+
+  &__slider.focusable {
+    border: 1px solid #222
+  }
+
+  &__thumb {
+    cursor: pointer;
+    border-color: #34404b;
+    border-style: solid;
+    // border-width: 1px;
+    // width:10px;
+    // height:10px;
+
+    background-color: #34404b;
+    border-radius: 50%;
+    position: absolute;
+    // top:-6px;
+    // left:50px;
+  }
+
+  &__track {
+    pointer-events: none;
+    height: 100%;
+    background-color: #34404b;
+  }
+
+  &__output {
+    position: absolute;
+    margin: 0;
+    margin-top: 30px;
+
+    font-size: 14px;
+  }
+
+  &__min-value,
+  &__max-value {
+    padding: 0;
+    margin: 0;
+    margin-right: 15px;
+
+    line-height: 25px;
+
+    font-size: 14px;
+  }
+
+  &__max-value {
+    margin-left: 20px;
+  }
+
+  &__output p {
+    pointer-events: auto;
+    text-align: center;
+  }
+}

@@ -1,14 +1,36 @@
-.price-filter {
-  min-height: 160px;
-  background-color: #ffffff;
-}
-
 .slider-bar__controls {
   position: relative;
 
   margin: 0 auto;
   margin-top: 19px;
 }
+
+.slider-bar__outputs {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-top: 40px;
+}
+
+.slider-bar__outputs input {
+  width: 45px;
+  height: 25px;
+  padding: 0;
+  margin: 0;
+  border: none;
+
+  background-color: #edf0f2;
+}
+
+.slider-bar__outputs label {
+  padding: 0;
+  margin: 0;
+  margin-right: 15px;
+
+  line-height: 25px;
+}
+
 
 .container {
   position: relative;
@@ -56,28 +78,25 @@
 }
 
 .output {
-  display: inline-block;
-  vertical-align: baseline;
+  position: absolute;
   margin: 0;
-  margin-top: 15px;
-  margin-right: 30px;
-  width: 45px;
-  height: 25px;
+  margin-top: 30px;
+
+  font-size: 14px;
 }
 
 .min-value,
 .max-value {
   margin-right: 5px;
+
+  font-size: 14px;
 }
 
-.output--last {
-  margin-right: 0;
+label.max-value {
+  margin-left: 24px;
 }
 
 .output p {
   pointer-events: auto;
   text-align: center;
-  background-color: #edf0f2;
-  box-shadow: inset 0 5px 0 3px #ffffff;
-  height: 36px;
 }

@@ -2,7 +2,7 @@ var inputsRy = {
   sliderWidth: 186,
   minRange: 0,
   maxRange: 2000,
-  outputWidth: 45, // output width
+  outputWidth: 50, // output width
   thumbWidth: 14, // thumb width
   thumbBorderWidth: 2,
   trackHeight: 3,
@@ -13,20 +13,20 @@ var isDragging1 = false;
 
 var range = inputsRy.maxRange - inputsRy.minRange;
 var rangeK = inputsRy.sliderWidth / range;
-var container = document.querySelector(".container");
+var container = document.querySelector(".price-filter__container");
 var thumbRealWidth = inputsRy.thumbWidth + 2 * inputsRy.thumbBorderWidth;
 
 // styles
-var slider = document.querySelector(".slider");
+var slider = document.querySelector(".slider-bar__slider");
 slider.style.height = inputsRy.trackHeight + "px";
 slider.style.width = inputsRy.sliderWidth + "px";
 slider.style.paddingLeft = (inputsRy.theValue[0] - inputsRy.minRange) * rangeK + "px";
 slider.style.paddingRight = inputsRy.sliderWidth - inputsRy.theValue[1] * rangeK + "px";
 
-var track = document.querySelector(".track");
+var track = document.querySelector(".slider-bar__track");
 track.style.width = inputsRy.theValue[1] * rangeK - inputsRy.theValue[0] * rangeK + "px";
 
-var thumbs = document.querySelectorAll(".thumb");
+var thumbs = document.querySelectorAll(".slider-bar__thumb");
 for (var i = 0; i < thumbs.length; i++) {
 
   thumbs[i].style.width = thumbs[i].style.height = inputsRy.thumbWidth + "px";
@@ -36,13 +36,13 @@ for (var i = 0; i < thumbs.length; i++) {
   thumbs[i].style.left = (inputsRy.theValue[i] - inputsRy.minRange) * rangeK - (thumbRealWidth / 2) + "px";
 
 }
-var outputs = document.querySelectorAll(".output");
+var outputs = document.querySelectorAll(".slider-bar__output");
 for (var i = 0; i < outputs.length; i++) {
   console.log(thumbs[i])
   outputs[i].style.width = outputs[i].style.height = outputs[i].style.lineHeight = outputs[i].style.left = inputsRy.outputWidth + "px";
   outputs[i].style.top = -(Math.sqrt(2 * inputsRy.outputWidth * inputsRy.outputWidth) + inputsRy.thumbWidth / 2 - inputsRy.trackHeight / 2) + "px";
   outputs[i].style.left = (inputsRy.theValue[i] - inputsRy.minRange) * rangeK - inputsRy.outputWidth / 2 + "px";
-  outputs[i].innerHTML = "<p>" + inputsRy.theValue[i] + "</p>";
+  outputs[i].innerHTML = "<p>" + inputsRy.theValue[i] + "$" + "</p>";
 }
 
 //events
@@ -75,7 +75,7 @@ container.addEventListener("mousemove", function(evt) {
       inputsRy.theValue[0] = theValue0;
       thumbs[0].style.left = (theValue0 - inputsRy.minRange) * rangeK - (thumbRealWidth / 2) + "px";
       outputs[0].style.left = (theValue0 - inputsRy.minRange) * rangeK - inputsRy.outputWidth / 2 + "px";
-      outputs[0].innerHTML = "<p>" + theValue0 + "</p>";
+      outputs[0].innerHTML = "<p>" + theValue0 + "$" + "</p>";
       slider.style.paddingLeft = (theValue0 - inputsRy.minRange) * rangeK + "px";
       track.style.width = (theValue1 - theValue0) * rangeK + "px";
 
@@ -87,7 +87,7 @@ container.addEventListener("mousemove", function(evt) {
       inputsRy.theValue[1] = theValue1;
       thumbs[1].style.left = (theValue1 - inputsRy.minRange) * rangeK - (thumbRealWidth / 2) + "px";
       outputs[1].style.left = (theValue1 - inputsRy.minRange) * rangeK - inputsRy.outputWidth / 2 + "px";
-      outputs[1].innerHTML = "<p>" + theValue1 + "</p>";
+      outputs[1].innerHTML = "<p>" + theValue1 + "$" + "</p>";
       slider.style.paddingRight = (inputsRy.maxRange - theValue1) * rangeK + "px";
       track.style.width = (theValue1 - theValue0) * rangeK + "px";
 
