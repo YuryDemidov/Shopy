@@ -1,0 +1,30 @@
+.filter {
+  width: 270px;
+
+  &__group {
+    margin: 0;
+    margin-bottom: 30px;
+    padding: 40px;
+    padding-top: 24px;
+    padding-bottom: 20px;
+    border: none;
+
+    line-height: 50px;
+    font-weight: 600;
+
+    background-color: #ffffff;
+
+    &:hover {
+      box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  &__group-name {
+    margin: 0;
+    margin-bottom: 7px;
+
+    font-size: 18px;
+    font-weight: 900;
+    color: $firm-color;
+  }
+}

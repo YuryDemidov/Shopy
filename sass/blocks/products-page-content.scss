@@ -1,0 +1,17 @@
+.products-page-content {
+  padding-bottom: 122px;
+  padding-top: 120px;
+
+  background-color: #f4f6f8;
+
+  &__container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+}

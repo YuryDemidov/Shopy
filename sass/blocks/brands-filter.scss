@@ -1,0 +1,22 @@
+.brands-filter {
+
+
+  &__brand {
+    display: none;
+  }
+
+  &__brand:checked + .brands-filter__option {
+    color: $firm-color;
+  }
+
+  &__option {
+    display: block;
+    width: 140px;
+
+    &:hover {
+      color: $firm-color;
+
+      cursor: pointer;
+    }
+  }
+}

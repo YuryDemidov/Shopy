@@ -1,0 +1,22 @@
+.categories-filter {
+
+
+  &__input {
+    display: none;
+  }
+
+  &__input:checked + .categories-filter__option {
+    color: $firm-color;
+  }
+
+  &__option {
+    display: block;
+    width: 140px;
+
+    &:hover {
+      color: $firm-color;
+
+      cursor: pointer;
+    }
+  }
+}

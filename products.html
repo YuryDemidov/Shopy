@@ -87,14 +87,15 @@
       </div>
     </div>
   </header>
-  <main class="page-content">
-    <h1 class="page-content__main-title visually-hidden">Our products</h1>
-    <div class="page-content___flex-wrapper">
+  <main class="products-page-content">
+    <h1 class="products-page-content__main-title visually-hidden">Our products</h1>
+    <div class="products-page-content__container">
       <aside class="filter">
+        <h2 class="filter__heading visually-hidden">Filter</h2>
         <form class="filter__form" action="https://echo.htmlacademy.ru" method="post">
           <fieldset class="filter__group categories-filter">
-            <legend class="filter__group-name categories-filter__heading">Categories</legend>
-            <input class="categories-filter__input" id="category-men" type="radio" name="category" value="men" checked>
+            <h3 class="filter__group-name categories-filter__heading">Categories</h3>
+            <input class="categories-filter__input" id="category-men" type="radio" name="category" value="men">
             <label class="categories-filter__option" for="category-men">Men</label>
             <input class="categories-filter__input" id="category-women" type="radio" name="category" value="women">
             <label class="categories-filter__option" for="category-women">Women</label>
@@ -104,7 +105,7 @@
             <label class="categories-filter__option" for="category-hot-deals">Hot Deals</label>
           </fieldset>
           <fieldset class="filter__group price-filter">
-            <legend class="filter__group-name price-filter__heading">Price Filter</legend>
+            <h3 class="filter__group-name price-filter__heading">Price Filter</h3>
             <div class="price-filter__container container slider-bar">
               <div class="slider-bar__controls">
                 <div class="slider-bar__slider slider">
@@ -120,7 +121,7 @@
             </div>
           </fieldset>
           <fieldset class="filter__group sizes-filter">
-            <legend class="sizes-filter__heading">Sizes</legend>
+            <h3 class="filter__group-name sizes-filter__heading">Sizes</h3>
             <input class="sizes-filter__size" id="size-s" type="checkbox" name="size-s"checked>
             <label class="sizes-filter__option" for="size-s">Small</label>
             <input class="sizes-filter__size" id="size-m" type="checkbox" name="size-m">
@@ -131,7 +132,7 @@
             <label class="sizes-filter__option" for="size-xl">Extra Large</label>
           </fieldset>
           <fieldset class="filter__group brands-filter">
-            <legend class="brands-filter__heading">Brands</legend>
+            <h3 class="filter__group-name brands-filter__heading">Brands</h3>
             <input class="brands-filter__brand" id="Reebok" type="checkbox" name="brand-reebok"checked>
             <label class="brands-filter__option" for="Reebok">Reebok</label>
             <input class="brands-filter__brand" id="Adidas" type="checkbox" name="brand-adidas">
@@ -144,216 +145,216 @@
           <button class="filter__refresh" type="submit">Обновить</button>
         </form>
       </aside>
+      <section class="catalogue">
+        <div class="catalogue__item product">
+          <img class="product__image" src="img/Product-2.jpg" alt="Reebock Track Jacket"width="159" height="214">
+          <h3 class="product__name">Reebock Track Jacket</h3>
+          <b class="product__price">100$</b>
+          <div class="product__focused">
+            <img class="product__small-image" src="img/Product-2.jpg" alt="Reebock Track Jacket" width="70" height="87">
+            <a class="product__to-description" href="#">Reebock Track Jacket</a>
+            <p class="product__sizes">sizes    :    s - m - l - xl</p>
+            <ul class="product__color-list">
+              <li class="product__color product__color--red">
+                <span class="visually-hidden">red</span>
+              </li>
+              <li class="product__color product__color--black">
+                <span class="visually-hidden">black</span>
+              </li>
+              <li class="product__color product__color--blue">
+                <span class="visually-hidden">blue</span>
+              </li>
+              <li class="product__color product__color--green">
+                <span class="visually-hidden">green</span>
+              </li>
+            </ul>
+            <a class="product__option product__option--share" href="#">Share</a>
+            <a class="product__option product__option--add-to-cart" href="#">Add to cart</a>
+            <a class="product__option product__option--like" href="#">Like</a>
+          </div>
+        </div>
+        <div class="catalogue__item product">
+          <img class="product__image" src="img/Product-3.jpg" alt="Reebock Track Jacket" width="170" height="211">
+          <h3 class="product__name">Reebock Track Jacket</h3>
+          <b class="product__price">100$</b>
+          <div class="product__focused">
+            <img class="product__small-image" src="img/Product-3-small.jpg" alt="Reebock Track Jacket" width="70" height="87">
+            <a class="product__to-description" href="#">Reebock Track Jacket</a>
+            <p class="product__sizes">sizes    :    s - m - l - xl</p>
+            <ul class="product__color-list">
+              <li class="product__color product__color--red"><span class="visually-hidden">red</span></li>
+              <li class="product__color product__color--black"><span class="visually-hidden">black</span></li>
+              <li class="product__color product__color--blue"><span class="visually-hidden">blue</span></li>
+              <li class="product__color product__color--green"><span class="visually-hidden">green</span></li>
+            </ul>
+            <a class="product__option product__option--share" href="#">Share</a>
+            <a class="product__option product__option--add-to-cart" href="#">Add to cart</a>
+            <a class="product__option product__option--like" href="#">Like</a>
+          </div>
+        </div>
+        <div class="catalogue__item product">
+          <img class="product__image" src="img/Product-3.jpg" alt="Reebock Track Jacket" width="170" height="211">
+          <h3 class="product__name">Reebock Track Jacket</h3>
+          <b class="product__price">100$</b>
+          <div class="product__focused">
+            <img class="product__small-image" src="img/Product-3-small.jpg" alt="Reebock Track Jacket" width="70" height="87">
+            <a class="product__to-description" href="#">Reebock Track Jacket</a>
+            <p class="product__sizes">sizes    :    s - m - l - xl</p>
+            <ul class="product__color-list">
+              <li class="product__color product__color--red"><span class="visually-hidden">red</span></li>
+              <li class="product__color product__color--black"><span class="visually-hidden">black</span></li>
+              <li class="product__color product__color--blue"><span class="visually-hidden">blue</span></li>
+              <li class="product__color product__color--green"><span class="visually-hidden">green</span></li>
+            </ul>
+            <a class="product__option product__option--share" href="#">Share</a>
+            <a class="product__option product__option--add-to-cart" href="#">Add to cart</a>
+            <a class="product__option product__option--like" href="#">Like</a>
+          </div>
+        </div>
+        <div class="catalogue__item product">
+          <img class="product__image" src="img/Product-2.jpg" alt="Reebock Track Jacket"width="159" height="214">
+          <h3 class="product__name">Reebock Track Jacket</h3>
+          <b class="product__price">100$</b>
+          <div class="product__focused">
+            <img class="product__small-image" src="img/Product-2.jpg" alt="Reebock Track Jacket" width="70" height="87">
+            <a class="product__to-description" href="#">Reebock Track Jacket</a>
+            <p class="product__sizes">sizes    :    s - m - l - xl</p>
+            <ul class="product__color-list">
+              <li class="product__color product__color--red">
+                <span class="visually-hidden">red</span>
+              </li>
+              <li class="product__color product__color--black">
+                <span class="visually-hidden">black</span>
+              </li>
+              <li class="product__color product__color--blue">
+                <span class="visually-hidden">blue</span>
+              </li>
+              <li class="product__color product__color--green">
+                <span class="visually-hidden">green</span>
+              </li>
+            </ul>
+            <a class="product__option product__option--share" href="#">Share</a>
+            <a class="product__option product__option--add-to-cart" href="#">Add to cart</a>
+            <a class="product__option product__option--like" href="#">Like</a>
+          </div>
+        </div>
+        <div class="catalogue__item product">
+          <img class="product__image" src="img/Product-1.jpg" alt="Reebock Track Jacket" width="144" height="213">
+          <h3 class="product__name">Reebock Track Jacket</h3>
+          <b class="product__price">100$</b>
+          <div class="product__focused">
+            <img class="product__small-image" src="img/Product-1.jpg" alt="Reebock Track Jacket" width="70" height="87">
+            <a class="product__to-description" href="#">Reebock Track Jacket</a>
+            <p class="product__sizes">sizes    :    s - m - l - xl</p>
+            <ul class="product__color-list">
+              <li class="product__color product__color--red"><span class="visually-hidden">red</span></li>
+              <li class="product__color product__color--black"><span class="visually-hidden">black</span></li>
+              <li class="product__color product__color--blue"><span class="visually-hidden">blue</span></li>
+              <li class="product__color product__color--green"><span class="visually-hidden">green</span></li>
+            </ul>
+            <a class="product__option product__option--share" href="#">Share</a>
+            <a class="product__option product__option--add-to-cart" href="#">Add to cart</a>
+            <a class="product__option product__option--like" href="#">Like</a>
+          </div>
+        </div>
+        <div class="catalogue__item product">
+          <img class="product__image" src="img/Product-3.jpg" alt="Reebock Track Jacket" width="170" height="211">
+          <h3 class="product__name">Reebock Track Jacket</h3>
+          <b class="product__price">100$</b>
+          <div class="product__focused">
+            <img class="product__small-image" src="img/Product-3-small.jpg" alt="Reebock Track Jacket" width="70" height="87">
+            <a class="product__to-description" href="#">Reebock Track Jacket</a>
+            <p class="product__sizes">sizes    :    s - m - l - xl</p>
+            <ul class="product__color-list">
+              <li class="product__color product__color--red"><span class="visually-hidden">red</span></li>
+              <li class="product__color product__color--black"><span class="visually-hidden">black</span></li>
+              <li class="product__color product__color--blue"><span class="visually-hidden">blue</span></li>
+              <li class="product__color product__color--green"><span class="visually-hidden">green</span></li>
+            </ul>
+            <a class="product__option product__option--share" href="#">Share</a>
+            <a class="product__option product__option--add-to-cart" href="#">Add to cart</a>
+            <a class="product__option product__option--like" href="#">Like</a>
+          </div>
+        </div>
+        <div class="catalogue__item product">
+          <img class="product__image" src="img/Product-2.jpg" alt="Reebock Track Jacket"width="159" height="214">
+          <h3 class="product__name">Reebock Track Jacket</h3>
+          <b class="product__price">100$</b>
+          <div class="product__focused">
+            <img class="product__small-image" src="img/Product-2.jpg" alt="Reebock Track Jacket" width="70" height="87">
+            <a class="product__to-description" href="#">Reebock Track Jacket</a>
+            <p class="product__sizes">sizes    :    s - m - l - xl</p>
+            <ul class="product__color-list">
+              <li class="product__color product__color--red">
+                <span class="visually-hidden">red</span>
+              </li>
+              <li class="product__color product__color--black">
+                <span class="visually-hidden">black</span>
+              </li>
+              <li class="product__color product__color--blue">
+                <span class="visually-hidden">blue</span>
+              </li>
+              <li class="product__color product__color--green">
+                <span class="visually-hidden">green</span>
+              </li>
+            </ul>
+            <a class="product__option product__option--share" href="#">Share</a>
+            <a class="product__option product__option--add-to-cart" href="#">Add to cart</a>
+            <a class="product__option product__option--like" href="#">Like</a>
+          </div>
+        </div>
+        <div class="catalogue__item product">
+          <img class="product__image" src="img/Product-1.jpg" alt="Reebock Track Jacket" width="144" height="213">
+          <h3 class="product__name">Reebock Track Jacket</h3>
+          <b class="product__price">100$</b>
+          <div class="product__focused">
+            <img class="product__small-image" src="img/Product-1.jpg" alt="Reebock Track Jacket" width="70" height="87">
+            <a class="product__to-description" href="#">Reebock Track Jacket</a>
+            <p class="product__sizes">sizes    :    s - m - l - xl</p>
+            <ul class="product__color-list">
+              <li class="product__color product__color--red"><span class="visually-hidden">red</span></li>
+              <li class="product__color product__color--black"><span class="visually-hidden">black</span></li>
+              <li class="product__color product__color--blue"><span class="visually-hidden">blue</span></li>
+              <li class="product__color product__color--green"><span class="visually-hidden">green</span></li>
+            </ul>
+            <a class="product__option product__option--share" href="#">Share</a>
+            <a class="product__option product__option--add-to-cart" href="#">Add to cart</a>
+            <a class="product__option product__option--like" href="#">Like</a>
+          </div>
+        </div>
+        <div class="catalogue__item product">
+          <img class="product__image" src="img/Product-3.jpg" alt="Reebock Track Jacket" width="170" height="211">
+          <h3 class="product__name">Reebock Track Jacket</h3>
+          <b class="product__price">100$</b>
+          <div class="product__focused">
+            <img class="product__small-image" src="img/Product-3-small.jpg" alt="Reebock Track Jacket" width="70" height="87">
+            <a class="product__to-description" href="#">Reebock Track Jacket</a>
+            <p class="product__sizes">sizes    :    s - m - l - xl</p>
+            <ul class="product__color-list">
+              <li class="product__color product__color--red"><span class="visually-hidden">red</span></li>
+              <li class="product__color product__color--black"><span class="visually-hidden">black</span></li>
+              <li class="product__color product__color--blue"><span class="visually-hidden">blue</span></li>
+              <li class="product__color product__color--green"><span class="visually-hidden">green</span></li>
+            </ul>
+            <a class="product__option product__option--share" href="#">Share</a>
+            <a class="product__option product__option--add-to-cart" href="#">Add to cart</a>
+            <a class="product__option product__option--like" href="#">Like</a>
+          </div>
+        </div>
+        <button class="catalogue__show-more show-more">
+          <p class="show-more__text visually-hidden">Show more</p>
+          <div class="show-more__dots">
+              <span class="show-more__dot"></span>
+              <span class="show-more__dot"></span>
+              <span class="show-more__dot"></span>
+          </div>
+        </button>
+      </section>
     </div>
-    <section class="catalogue">
-      <div class="catalogue__item product">
-        <img class="product__image" src="img/Product-2.jpg" alt="Reebock Track Jacket"width="159" height="214">
-        <h3 class="product__name">Reebock Track Jacket</h3>
-        <b class="product__price">100$</b>
-        <div class="product__focused">
-          <img class="product__small-image" src="img/Product-2.jpg" alt="Reebock Track Jacket" width="70" height="87">
-          <a class="product__to-description" href="#">Reebock Track Jacket</a>
-          <p class="product__sizes">sizes    :    s - m - l - xl</p>
-          <ul class="product__color-list">
-            <li class="product__color product__color--red">
-              <span class="visually-hidden">red</span>
-            </li>
-            <li class="product__color product__color--black">
-              <span class="visually-hidden">black</span>
-            </li>
-            <li class="product__color product__color--blue">
-              <span class="visually-hidden">blue</span>
-            </li>
-            <li class="product__color product__color--green">
-              <span class="visually-hidden">green</span>
-            </li>
-          </ul>
-          <a class="product__option product__option--share" href="#">Share</a>
-          <a class="product__option product__option--add-to-cart" href="#">Add to cart</a>
-          <a class="product__option product__option--like" href="#">Like</a>
-        </div>
-      </div>
-      <div class="catalogue__item product">
-        <img class="product__image" src="img/Product-3.jpg" alt="Reebock Track Jacket" width="170" height="211">
-        <h3 class="product__name">Reebock Track Jacket</h3>
-        <b class="product__price">100$</b>
-        <div class="product__focused">
-          <img class="product__small-image" src="img/Product-3-small.jpg" alt="Reebock Track Jacket" width="70" height="87">
-          <a class="product__to-description" href="#">Reebock Track Jacket</a>
-          <p class="product__sizes">sizes    :    s - m - l - xl</p>
-          <ul class="product__color-list">
-            <li class="product__color product__color--red"><span class="visually-hidden">red</span></li>
-            <li class="product__color product__color--black"><span class="visually-hidden">black</span></li>
-            <li class="product__color product__color--blue"><span class="visually-hidden">blue</span></li>
-            <li class="product__color product__color--green"><span class="visually-hidden">green</span></li>
-          </ul>
-          <a class="product__option product__option--share" href="#">Share</a>
-          <a class="product__option product__option--add-to-cart" href="#">Add to cart</a>
-          <a class="product__option product__option--like" href="#">Like</a>
-        </div>
-      </div>
-      <div class="catalogue__item product">
-        <img class="product__image" src="img/Product-3.jpg" alt="Reebock Track Jacket" width="170" height="211">
-        <h3 class="product__name">Reebock Track Jacket</h3>
-        <b class="product__price">100$</b>
-        <div class="product__focused">
-          <img class="product__small-image" src="img/Product-3-small.jpg" alt="Reebock Track Jacket" width="70" height="87">
-          <a class="product__to-description" href="#">Reebock Track Jacket</a>
-          <p class="product__sizes">sizes    :    s - m - l - xl</p>
-          <ul class="product__color-list">
-            <li class="product__color product__color--red"><span class="visually-hidden">red</span></li>
-            <li class="product__color product__color--black"><span class="visually-hidden">black</span></li>
-            <li class="product__color product__color--blue"><span class="visually-hidden">blue</span></li>
-            <li class="product__color product__color--green"><span class="visually-hidden">green</span></li>
-          </ul>
-          <a class="product__option product__option--share" href="#">Share</a>
-          <a class="product__option product__option--add-to-cart" href="#">Add to cart</a>
-          <a class="product__option product__option--like" href="#">Like</a>
-        </div>
-      </div>
-      <div class="catalogue__item product">
-        <img class="product__image" src="img/Product-2.jpg" alt="Reebock Track Jacket"width="159" height="214">
-        <h3 class="product__name">Reebock Track Jacket</h3>
-        <b class="product__price">100$</b>
-        <div class="product__focused">
-          <img class="product__small-image" src="img/Product-2.jpg" alt="Reebock Track Jacket" width="70" height="87">
-          <a class="product__to-description" href="#">Reebock Track Jacket</a>
-          <p class="product__sizes">sizes    :    s - m - l - xl</p>
-          <ul class="product__color-list">
-            <li class="product__color product__color--red">
-              <span class="visually-hidden">red</span>
-            </li>
-            <li class="product__color product__color--black">
-              <span class="visually-hidden">black</span>
-            </li>
-            <li class="product__color product__color--blue">
-              <span class="visually-hidden">blue</span>
-            </li>
-            <li class="product__color product__color--green">
-              <span class="visually-hidden">green</span>
-            </li>
-          </ul>
-          <a class="product__option product__option--share" href="#">Share</a>
-          <a class="product__option product__option--add-to-cart" href="#">Add to cart</a>
-          <a class="product__option product__otion--like" href="#">Like</a>
-        </div>
-      </div>
-      <div class="catalogue__item product">
-        <img class="product__image" src="img/Product-1.jpg" alt="Reebock Track Jacket" width="144" height="213">
-        <h3 class="product__name">Reebock Track Jacket</h3>
-        <b class="product__price">100$</b>
-        <div class="product__focused">
-          <img class="product__small-image" src="img/Product-1.jpg" alt="Reebock Track Jacket" width="70" height="87">
-          <a class="product__to-description" href="#">Reebock Track Jacket</a>
-          <p class="product__sizes">sizes    :    s - m - l - xl</p>
-          <ul class="product__color-list">
-            <li class="product__color product__color--red"><span class="visually-hidden">red</span></li>
-            <li class="product__color product__color--black"><span class="visually-hidden">black</span></li>
-            <li class="product__color product__color--blue"><span class="visually-hidden">blue</span></li>
-            <li class="product__color product__color--green"><span class="visually-hidden">green</span></li>
-          </ul>
-          <a class="product__option product__option--share" href="#">Share</a>
-          <a class="product__option product__option--add-to-cart" href="#">Add to cart</a>
-          <a class="product__option product__option--like" href="#">Like</a>
-        </div>
-      </div>
-      <div class="catalogue__item product">
-        <img class="product__image" src="img/Product-3.jpg" alt="Reebock Track Jacket" width="170" height="211">
-        <h3 class="product__name">Reebock Track Jacket</h3>
-        <b class="product__price">100$</b>
-        <div class="product__focused">
-          <img class="product__small-image" src="img/Product-3-small.jpg" alt="Reebock Track Jacket" width="70" height="87">
-          <a class="product__to-description" href="#">Reebock Track Jacket</a>
-          <p class="product__sizes">sizes    :    s - m - l - xl</p>
-          <ul class="product__color-list">
-            <li class="product__color product__color--red"><span class="visually-hidden">red</span></li>
-            <li class="product__color product__color--black"><span class="visually-hidden">black</span></li>
-            <li class="product__color product__color--blue"><span class="visually-hidden">blue</span></li>
-            <li class="product__color product__color--green"><span class="visually-hidden">green</span></li>
-          </ul>
-          <a class="product__option product__option--share" href="#">Share</a>
-          <a class="product__option product__option--add-to-cart" href="#">Add to cart</a>
-          <a class="product__option product__option--like" href="#">Like</a>
-        </div>
-      </div>
-      <div class="catalogue__item product">
-        <img class="product__image" src="img/Product-2.jpg" alt="Reebock Track Jacket"width="159" height="214">
-        <h3 class="product__name">Reebock Track Jacket</h3>
-        <b class="product__price">100$</b>
-        <div class="product__focused">
-          <img class="product__small-image" src="img/Product-2.jpg" alt="Reebock Track Jacket" width="70" height="87">
-          <a class="product__to-description" href="#">Reebock Track Jacket</a>
-          <p class="product__sizes">sizes    :    s - m - l - xl</p>
-          <ul class="product__color-list">
-            <li class="product__color product__color--red">
-              <span class="visually-hidden">red</span>
-            </li>
-            <li class="product__color product__color--black">
-              <span class="visually-hidden">black</span>
-            </li>
-            <li class="product__color product__color--blue">
-              <span class="visually-hidden">blue</span>
-            </li>
-            <li class="product__color product__color--green">
-              <span class="visually-hidden">green</span>
-            </li>
-          </ul>
-          <a class="product__option product__option--share" href="#">Share</a>
-          <a class="product__option product__option--add-to-cart" href="#">Add to cart</a>
-          <a class="product__option product__option--like" href="#">Like</a>
-        </div>
-      </div>
-      <div class="catalogue__item product">
-        <img class="product__image" src="img/Product-1.jpg" alt="Reebock Track Jacket" width="144" height="213">
-        <h3 class="product__name">Reebock Track Jacket</h3>
-        <b class="product__price">100$</b>
-        <div class="product__focused">
-          <img class="product__small-image" src="img/Product-1.jpg" alt="Reebock Track Jacket" width="70" height="87">
-          <a class="product__to-description" href="#">Reebock Track Jacket</a>
-          <p class="product__sizes">sizes    :    s - m - l - xl</p>
-          <ul class="product__color-list">
-            <li class="product__color product__color--red"><span class="visually-hidden">red</span></li>
-            <li class="product__color product__color--black"><span class="visually-hidden">black</span></li>
-            <li class="product__color product__color--blue"><span class="visually-hidden">blue</span></li>
-            <li class="product__color product__color--green"><span class="visually-hidden">green</span></li>
-          </ul>
-          <a class="product__option product__option--share" href="#">Share</a>
-          <a class="product__option product__option--add-to-cart" href="#">Add to cart</a>
-          <a class="product__option product__option--like" href="#">Like</a>
-        </div>
-      </div>
-      <div class="catalogue__item product">
-        <img class="product__image" src="img/Product-3.jpg" alt="Reebock Track Jacket" width="170" height="211">
-        <h3 class="product__name">Reebock Track Jacket</h3>
-        <b class="product__price">100$</b>
-        <div class="product__focused">
-          <img class="product__small-image" src="img/Product-3-small.jpg" alt="Reebock Track Jacket" width="70" height="87">
-          <a class="product__to-description" href="#">Reebock Track Jacket</a>
-          <p class="product__sizes">sizes    :    s - m - l - xl</p>
-          <ul class="product__color-list">
-            <li class="product__color product__color--red"><span class="visually-hidden">red</span></li>
-            <li class="product__color product__color--black"><span class="visually-hidden">black</span></li>
-            <li class="product__color product__color--blue"><span class="visually-hidden">blue</span></li>
-            <li class="product__color product__color--green"><span class="visually-hidden">green</span></li>
-          </ul>
-          <a class="product__option product__option--share" href="#">Share</a>
-          <a class="product__option product__option--add-to-cart" href="#">Add to cart</a>
-          <a class="product__option product__option--like" href="#">Like</a>
-        </div>
-      </div>
-      <button class="show-more">
-        <p class="show-more__text visually-hidden">Show more</p>
-        <div class="show-more__dots">
-            <span class="show-more__dot"></span>
-            <span class="show-more__dot"></span>
-            <span class="show-more__dot"></span>
-        </div>
-      </button>
-    </section>
 
 
     <section class="subscription">
-      <div class="page-content__container">
+      <div class="products-page-content__container">
         <div class="subscription__flex-container">
           <h2 class="subscription__main-title visually-hidden">Subscription</h2>
           <h3 class="subscription__heading">News letter</h3>
