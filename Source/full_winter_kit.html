@@ -87,9 +87,54 @@
     </div>
   </header>
   <main class="page-content">
+    <section class="single-product__show">
+      <div class="single-product__left-column">
+        <img class="single-product__big-image" src="img/Full_winter_kit-page/Half_Jacket--big.jpg" width="145" height="275">
+        <div class="single-product__pictures">
+          <div class="single-product__small-image"><img src="img/Full_winter_kit-page/Boot_Leather.png" alt="Boot Leather"></div>
+          <div class="single-product__small-image"><img src="img/Full_winter_kit-page/Skiny_Trousers.png" alt="Skiny Trousers"></div>
+          <div class="single-product__small-image single-product__small-image--active"><img src="img/Full_winter_kit-page/Half_Jacket.png" alt="Half Jacket"></div>
+        </div>
+      </div>
+      <div class="single-product__right-column">
+        <h1 class="single-product__heading">Full winter kit</h1>
+        <p class="single-product__goods">Half Jacket + Skiny Trousers + Boot leather</p>
+        <p class="single-product__description">Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+        <form class="single-product__parameters" id="single-product__parameters" action="https://echo.htmlacademy.ru" method="get">
+          <div class="single-product__size">
+            <p class="single-product__size-text">Choose Size</p>
+            <input class="single-product__size-input" id="size-s" type="radio" name="size" value="s">
+            <label class="single-product__size-option" for="size-s">S</label>
+            <input class="single-product__size-input" id="size-m" type="radio" name="size" value="m">
+            <span>-</span>
+            <label class="single-product__size-option" for="size-m">M</label>
+            <input class="single-product__size-input" id="size-l" type="radio" name="size" value="l" checked>
+            <span>-</span>
+            <label class="single-product__size-option" for="size-l">L</label>
+            <input class="single-product__size-input" id="size-xl" type="radio" name="size" value="xl">
+            <span>-</span>
+            <label class="single-product__size-option" for="size-xl">XL</label>
+          </div>
+          <div class="single-product__quantity">
+            <p class="single-product__quantity-text">Choose Quantity</p>
+            <button class="single-product__plus-btn" type="button">+</button>
+            <input class="single-product__number" name="quantity" value="3">
+            <button class="single-product__plus-btn" type="button">-</button>
+          </div>
+        </form>
+        <div class="single-product__order-area">
+          <b class="single-product__price">Price : 120$</b>
+          <div class="single-product__icons">
+            <a class="single-product__icon single-product__icon--share" href="#"><span class="visually-hidden">Share</span></a>
+            <a class="single-product__icon single-product__icon--add-to-cart" href="#"><span class="visually-hidden">Add to cart</span></a>
+            <a class="single-product__icon single-product__icon--like" href="#"><span class="visually-hidden">Like</span></a>
+          </div>
+          <button class="single-product__button order-button" type="submit" form="single-product__parameters">Order Now</button>
+        </div>
 
 
-
+      </div>
+    </section>
     <section class="related-products">
       <div class="related-products__container page-content__container">
         <h2 class="related-products__title"><span>Related</span> products</h2>
