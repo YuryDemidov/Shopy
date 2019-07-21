@@ -1,5 +1,6 @@
 .related-products {
-  padding-top: 112px;
+  padding-top: 114px;
+  padding-bottom: 33px;
 
   background-color: #f4f6f8;
 
@@ -11,9 +12,10 @@
 
   &__title {
     margin: 0;
+    margin-bottom: 20px;
     padding: 0;
 
-    font-size: 36px;
+    font-size: 28px;
     font-weight: 900;
     text-transform: uppercase;
 
@@ -23,6 +25,7 @@
   }
 
   &__description {
+    margin: 0;
     margin-bottom: 80px;
 
     color: $content-text-color;

@@ -87,39 +87,45 @@
     </div>
   </header>
   <main class="page-content">
-    <section class="single-product__show">
+    <section class="single-product">
       <div class="single-product__left-column">
         <img class="single-product__big-image" src="img/Full_winter_kit-page/Half_Jacket--big.jpg" width="145" height="275">
         <div class="single-product__pictures">
-          <div class="single-product__small-image"><img src="img/Full_winter_kit-page/Boot_Leather.png" alt="Boot Leather"></div>
-          <div class="single-product__small-image"><img src="img/Full_winter_kit-page/Skiny_Trousers.png" alt="Skiny Trousers"></div>
-          <div class="single-product__small-image single-product__small-image--active"><img src="img/Full_winter_kit-page/Half_Jacket.png" alt="Half Jacket"></div>
+          <div class="single-product__small-image">
+            <img src="img/Full_winter_kit-page/Boot_Leather.png" alt="Boot Leather">
+          </div>
+          <div class="single-product__small-image">
+            <img src="img/Full_winter_kit-page/Skiny_Trousers.png" alt="Skiny Trousers">
+          </div>
+          <div class="single-product__small-image single-product__small-image--active">
+            <img src="img/Full_winter_kit-page/Half_Jacket.png" alt="Half Jacket">
+          </div>
         </div>
       </div>
       <div class="single-product__right-column">
         <h1 class="single-product__heading">Full winter kit</h1>
         <p class="single-product__goods">Half Jacket + Skiny Trousers + Boot leather</p>
-        <p class="single-product__description">Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+        <p class="single-product__description">Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum is simply dummy text of the printing <br> and typesetting industry</p>
         <form class="single-product__parameters" id="single-product__parameters" action="https://echo.htmlacademy.ru" method="get">
           <div class="single-product__size">
             <p class="single-product__size-text">Choose Size</p>
-            <input class="single-product__size-input" id="size-s" type="radio" name="size" value="s">
+            <input class="single-product__size-input visually-hidden" id="size-s" type="radio" name="size" value="s">
             <label class="single-product__size-option" for="size-s">S</label>
-            <input class="single-product__size-input" id="size-m" type="radio" name="size" value="m">
-            <span>-</span>
+            <span>&nbsp;-&nbsp;</span>
+            <input class="single-product__size-input visually-hidden" id="size-m" type="radio" name="size" value="m">
             <label class="single-product__size-option" for="size-m">M</label>
-            <input class="single-product__size-input" id="size-l" type="radio" name="size" value="l" checked>
-            <span>-</span>
+            <span>&nbsp;-&nbsp;</span>
+            <input class="single-product__size-input visually-hidden" id="size-l" type="radio" name="size" value="l" checked>
             <label class="single-product__size-option" for="size-l">L</label>
-            <input class="single-product__size-input" id="size-xl" type="radio" name="size" value="xl">
-            <span>-</span>
+            <span>&nbsp;-&nbsp;</span>
+            <input class="single-product__size-input visually-hidden" id="size-xl" type="radio" name="size" value="xl">
             <label class="single-product__size-option" for="size-xl">XL</label>
           </div>
           <div class="single-product__quantity">
             <p class="single-product__quantity-text">Choose Quantity</p>
-            <button class="single-product__plus-btn" type="button">+</button>
+            <button class="single-product__btn single-product__btn--plus" type="button">+</button>
             <input class="single-product__number" name="quantity" value="3">
-            <button class="single-product__plus-btn" type="button">-</button>
+            <button class="single-product__btn single-product__btn--minus" type="button">-</button>
           </div>
         </form>
         <div class="single-product__order-area">
@@ -131,8 +137,6 @@
           </div>
           <button class="single-product__button order-button" type="submit" form="single-product__parameters">Order Now</button>
         </div>
-
-
       </div>
     </section>
     <section class="related-products">
@@ -141,11 +145,11 @@
         <p class="related-products__description">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
         <div class="related-products__products">
           <div class="related-products__item product">
-            <img class="product__image" src="img/Product-1.jpg" alt="Reebock Track Jacket" width="144" height="213">
+            <img class="product__image" src="img/Product-3.jpg" alt="Reebock Track Jacket" width="170" height="211">
             <h3 class="product__name">Reebock Track Jacket</h3>
             <b class="product__price">100$</b>
             <div class="product__focused">
-              <img class="product__small-image" src="img/Product-1.jpg" alt="Reebock Track Jacket" width="70" height="87">
+              <img class="product__small-image" src="img/Product-3-small.jpg" alt="Reebock Track Jacket" width="70" height="87">
               <a class="product__to-description" href="#">Reebock Track Jacket</a>
               <p class="product__sizes">sizes    :    s - m - l - xl</p>
               <ul class="product__color-list">
@@ -188,11 +192,11 @@
             </div>
           </div>
           <div class="related-products__item product">
-            <img class="product__image" src="img/Product-3.jpg" alt="Reebock Track Jacket" width="170" height="211">
+            <img class="product__image" src="img/Product-1.jpg" alt="Reebock Track Jacket" width="144" height="213">
             <h3 class="product__name">Reebock Track Jacket</h3>
             <b class="product__price">100$</b>
             <div class="product__focused">
-              <img class="product__small-image" src="img/Product-3-small.jpg" alt="Reebock Track Jacket" width="70" height="87">
+              <img class="product__small-image" src="img/Product-1.jpg" alt="Reebock Track Jacket" width="70" height="87">
               <a class="product__to-description" href="#">Reebock Track Jacket</a>
               <p class="product__sizes">sizes    :    s - m - l - xl</p>
               <ul class="product__color-list">
