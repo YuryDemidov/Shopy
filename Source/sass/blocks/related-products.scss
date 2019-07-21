@@ -1,0 +1,50 @@
+.related-products {
+  padding-top: 114px;
+  padding-bottom: 33px;
+
+  background-color: #f4f6f8;
+
+  &__container {
+    display: block;
+
+    text-align: center;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 0;
+
+    font-size: 28px;
+    font-weight: 900;
+    text-transform: uppercase;
+
+    span {
+      color: $firm-color;
+    }
+  }
+
+  &__description {
+    margin: 0;
+    margin-bottom: 80px;
+
+    color: $content-text-color;
+  }
+
+  &__products {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  &__item {
+    flex-basis: 270px;
+
+    margin-right: 30px;
+
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
+  }
+}

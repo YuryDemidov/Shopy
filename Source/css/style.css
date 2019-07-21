@@ -1032,20 +1032,23 @@ html {
     margin-left: 30px; }
 
 .related-products {
-  padding-top: 112px;
+  padding-top: 114px;
+  padding-bottom: 33px;
   background-color: #f4f6f8; }
   .related-products__container {
     display: block;
     text-align: center; }
   .related-products__title {
     margin: 0;
+    margin-bottom: 20px;
     padding: 0;
-    font-size: 36px;
+    font-size: 28px;
     font-weight: 900;
     text-transform: uppercase; }
     .related-products__title span {
       color: #ff5912; }
   .related-products__description {
+    margin: 0;
     margin-bottom: 80px;
     color: #495662; }
   .related-products__products {
@@ -1058,3 +1061,165 @@ html {
     margin-right: 30px; }
     .related-products__item:nth-child(4n) {
       margin-right: 0; }
+
+.single-product {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 104px;
+  padding-bottom: 83px;
+  border-top: 1px solid #edeff1;
+  background-color: #ffffff; }
+  .single-product__left-column {
+    width: 330px;
+    margin-right: 70px; }
+  .single-product__big-image {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 68px; }
+  .single-product__pictures {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 320px;
+    margin: 0 auto; }
+  .single-product__small-image {
+    width: 95px;
+    height: 69px;
+    text-align: center;
+    line-height: 69px;
+    background-color: #f4f6f8;
+    cursor: pointer; }
+    .single-product__small-image img {
+      vertical-align: middle; }
+    .single-product__small-image:hover {
+      outline: 1px solid #ff5912; }
+  .single-product__small-image--active {
+    background-color: #ff5912;
+    cursor: auto; }
+    .single-product__small-image--active img {
+      opacity: 0.3; }
+  .single-product__right-column {
+    width: 630px;
+    padding-left: 10px; }
+  .single-product__heading {
+    margin: 0;
+    margin-top: -10px;
+    margin-bottom: 15px;
+    padding: 0;
+    font-size: 52px;
+    font-weight: 900;
+    line-height: 52px;
+    text-transform: uppercase;
+    color: #ff5912; }
+  .single-product__goods {
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 0;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 30px; }
+  .single-product__description {
+    margin: 0;
+    padding: 0;
+    padding-right: 85px;
+    padding-bottom: 34px;
+    border-bottom: 1px solid #edeff1;
+    line-height: 30px;
+    color: #495662; }
+  .single-product__parameters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #edeff1;
+    font-size: 18px; }
+  .single-product__size {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    width: 290px; }
+  .single-product__size-text {
+    margin: 0;
+    margin-right: 20px;
+    padding: 0; }
+  .single-product__size-input:checked + .single-product__size-option {
+    font-size: 20px;
+    color: #ff5912; }
+  .single-product__size-option {
+    font-size: 14px; }
+    .single-product__size-option:hover {
+      color: #ff5912;
+      cursor: pointer; }
+  .single-product__quantity {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end; }
+  .single-product__quantity-text {
+    margin-right: 15px; }
+  .single-product__number {
+    width: 30px;
+    border: none;
+    text-align: center;
+    color: #ff5912; }
+  .single-product__btn {
+    border: none;
+    background-color: #ffffff;
+    cursor: pointer; }
+    .single-product__btn:hover {
+      color: #ff5912; }
+  .single-product__order-area {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 129px;
+    padding: 35px 0; }
+  .single-product__price {
+    margin-right: auto;
+    font-size: 20px;
+    font-weight: 900; }
+  .single-product__icons {
+    min-width: 150px; }
+  .single-product__icon {
+    position: relative;
+    display: inline-block;
+    margin-right: 22px;
+    padding: 12px;
+    font-size: 0;
+    vertical-align: middle; }
+    .single-product__icon span {
+      font-size: 16px; }
+    .single-product__icon::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 24px;
+      height: 24px;
+      background-image: url(../img/Sprite.png); }
+    .single-product__icon--share::before {
+      background-position: -134px -45px; }
+    .single-product__icon--add-to-cart::before {
+      background-image: none;
+      background-image: url(../img/Full_winter_kit-page/Add_to_cart.png);
+      background-repeat: no-repeat; }
+    .single-product__icon--like::before {
+      background-position: -45px -85px; }
+    .single-product__icon:hover::before {
+      outline: 1px solid rgba(255, 89, 18, 0.4); }
+
+.order-button {
+  width: 134px;
+  padding: 15px;
+  border: none;
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #ff5912;
+  border-radius: 25px;
+  cursor: pointer; }
