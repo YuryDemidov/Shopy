@@ -14,7 +14,7 @@ var include = require("posthtml-include");
 var server = require("browser-sync").create();
 
 gulp.task("style", function () {
-  gulp.src("source/sass/**/style.scss")
+  return gulp.src("source/sass/**/style.scss")
     .pipe(plumber())
     .pipe(sass())
     .pipe(postcss([
@@ -64,10 +64,12 @@ gulp.task("serve", function() {
   server.init({
     server: "build/"
   });
+  gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("style"))
+  gulp.watch("source/*.html", gulp.series("html")).on("change", server.reload);
+});
 
-  gulp.watch("source/sass/**/*.{scss,sass}", ["style"]);
-  gulp.watch("source/*.html" ["html"])
-    .on("change", server.reload);
+gulp.task("clean", function () {
+  return del("build");
 });
 
 gulp.task("copy", function () {
@@ -81,6 +83,8 @@ gulp.task("copy", function () {
   .pipe(gulp.dest("build"));
 });
 
-gulp.task("clean", function () {
-  return del("build");
-});
+// General tasks
+
+var build = gulp.series("clean", "copy", gulp.parallel("style", "images", "webp", "sprite", "html"));
+
+exports.build = build;
